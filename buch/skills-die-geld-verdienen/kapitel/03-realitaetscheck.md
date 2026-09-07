@@ -1,7 +1,7 @@
 ---
 title: "Mittelstands-Realitätscheck"
 chapter: 3
-status: entwurf
+status: lektorat-auflagen
 author: Mara
 date: 2026-09-07
 book: Skills, die Geld verdienen
@@ -17,19 +17,21 @@ Zwischen Hype und Verweigerung liegt die Entscheidung, die Geld und Nerven spart
 
 Ein Agent ist Orchestrierung mit Ziel, Schritten und Grenzen. Er lohnt sich nicht, weil er modern wirkt, sondern wenn ein klarer Auftrag mehrmals ähnlich abläuft und Skills oder Werkzeuge sinnvoll verknüpft werden müssen. Die folgende Prüfung ist eine Entscheidungshilfe, kein Automatismus. Sie ersetzt weder Piloten noch Messung (Kapitel 10), aber sie verhindert den teuersten Fehler: ein Betriebsmittel ohne Betriebsgrund.
 
-Prüfen Sie ehrlich. Je mehr Punkte zutreffen, desto eher lohnt ein **schmaler** Agent — ein Auftragstyp, wenige Skills, sichtbare Stopps. Dafür spricht ein Agent, wenn der Ablauf einen benennbaren Trigger und ein benennbares Ergebnis hat; wenn mehrere Schritte sinnvoll nacheinander laufen, nicht nur ein Formulier-Tipp; wenn mindestens ein Schritt als Skill oder klarer Werkzeugaufruf abgrenzbar ist; wenn Inputs auffindbar sind — Notizen, Vorlage, Ticket, Ordner —, nicht nur „im Kopf von …“; wenn ein Owner benannt und bereit ist, Qualität und Abschaltung zu verantworten; wenn Freigabegrenzen klar sind (was allein, was Mensch); wenn derselbe Ablauf wiederholt kommt oder teuer wird, sobald er jedes Mal neu erfunden wird; und wenn Logging und Nachvollziehbarkeit für Mandat und interne Steuerung akzeptabel sind.
+Prüfen Sie ehrlich. Je mehr Punkte zutreffen, desto eher lohnt ein **schmaler** Agent — ein Auftragstyp, wenige Skills, sichtbare Stopps.
+
+Dafür spricht ein Agent unter anderem dann: Der Ablauf hat einen benennbaren Trigger und ein benennbares Ergebnis. Mehrere Schritte laufen sinnvoll nacheinander — nicht nur ein Formulier-Tipp. Mindestens ein Schritt ist als Skill oder klarer Werkzeugaufruf abgrenzbar. Inputs sind auffindbar (Notizen, Vorlage, Ticket, Ordner), nicht nur „im Kopf von …“. Ein Owner ist benannt und bereit, Qualität und Abschaltung zu verantworten. Freigabegrenzen sind klar (was allein, was Mensch). Derselbe Ablauf kommt wiederholt — oder wird teuer, sobald er jedes Mal neu erfunden wird. Logging und Nachvollziehbarkeit sind für Mandat und interne Steuerung akzeptabel.
 
 Dagegen sprechen starke Warnsignale: Der Kontext ist jedes Mal politisch, rechtlich oder persönlich einzigartig. Niemand will den Output wirklich prüfen — „soll schon passen“ ist kein Betrieb. Der Workflow selbst ist unklar, und man hofft, der Agent „finde schon einen Weg“. Zugänge und Daten wären zu weit (Kundengeheimnisse, Buchhaltung, Personalakten). Das eigentliche Problem ist Chaos in Ablage, Zuständigkeit oder Entscheidung — nicht Tipparbeit. Oder es gibt schon drei halb fertige Experimente ohne Owner: Zoo-Frühstadium.
 
 Die Entscheidungsregel light lautet deshalb: Weniger als die Hälfte der „Dafür“-Punkte und mindestens ein starkes Warnsignal → **nicht agentisieren**. Zuerst Workflow klären, vereinfachen oder einen einzelnen Skill bauen. Mehrere „Dafür“, klare Freigabe, klarer Owner → Pilot mit schmalem Agenten, bevor irgendetwas skaliert. Die Zusatzfrage für GF und IT gemeinsam bleibt die härteste: **Würden wir diesen Ablauf auch ohne KI dokumentieren und jemandem übergeben?** Wenn die Antwort nein ist, fehlt Organisationsklarheit. Technik ersetzt das nicht.
 
-Zur Einordnung der Ausgangslage: Laut KfW Research (Fokus Volkswirtschaft Nr. 554, 29. Juli 2026, Dr. Volker Zimmermann; Erhebung 2022–2024 / KfW-Mittelstandspanel 2025) nutzen **20 %** der mittelständischen Unternehmen mindestens eine KI-Technologie — überwiegend handhabbare Einzeltechnologien, nicht automatisch Agenten-Betrieb. (KfW Fokus 554 — **Verifiziert**, Vera.) Amtlich ergänzt die Destatis-IKT-Erhebung 2025 das Bild für Unternehmen ab 10 Beschäftigten: **26 %** nutzen KI; nach Größenklassen etwa **23 / 36 / 57 %** (kleine / mittlere / große). Das ist eine andere Grundgesamtheit als das KfW-Mittelstandspanel — die Zahlen **nicht vermischen**, und Bitkom-Werte gehören ebenfalls nicht in denselben Satz. (Destatis IKT 2025 — **Verifiziert**, Vera.) Entscheidung über Checkliste und Pilot, nicht über Behauptungs-ROI.
+Zur Einordnung der Adoption im Mittelstand bleiben die Zahlen aus Kapitel 1 maßgeblich `(KfW Fokus 554)`: **20 %**; `(Destatis IKT 2025)`: **26 %** ab 10 Beschäftigten — andere Grundgesamtheit, **nicht vermischen**, Bitkom nicht in denselben Satz (Details: Anhang C). Sie zeigen Einzelnutzung, nicht automatisch Agenten-Betrieb. Die Entscheidung hier läuft über Checkliste und Pilot, nicht über Behauptungs-ROI.
 
 ## Wertstrom statt Abteilungsdenken
 
 Kunden und Auftraggeber erleben selten „die Marketing-KI“ oder „den Vertriebs-Bot“. Sie erleben eine Kette: Anfrage → Angebot → Kickoff → Lieferung → Abnahme → Nacharbeit. Brüche entstehen an den **Übergaben** — genau dort, wo Abteilungs-Bots besonders gern auseinanderlaufen.
 
-Wertstrom-Denken heißt deshalb: Outcomes entlang der Kette wählen, nicht entlang des Organigramms; Skills so schneiden, dass sie an Übergaben dieselbe Sprache sprechen — Status, offene Punkte, Annahmen, nächste Schritte; Ownership am Ergebnis festmachen, nicht am Tool-Besitz einer Abteilung; und den Pilot dort starten, wo der Engpass spürbar ist — oft an der Nahtstelle, nicht in der Mitte einer Abteilungssilo-Komfortzone.
+Wertstrom-Denken heißt deshalb vier Dinge. Outcomes entlang der Kette wählen, nicht entlang des Organigramms. Skills so schneiden, dass sie an Übergaben dieselbe Sprache sprechen — Status, offene Punkte, Annahmen, nächste Schritte. Ownership am Ergebnis festmachen, nicht am Tool-Besitz einer Abteilung. Und den Pilot dort starten, wo der Engpass spürbar ist — oft an der Nahtstelle, nicht in der Mitte einer Abteilungssilo-Komfortzone.
 
 ### Beispielmuster D: Angebot bis Kickoff-Nacharbeit
 
@@ -37,7 +39,7 @@ Wertstrom-Denken heißt deshalb: Outcomes entlang der Kette wählen, nicht entla
 
 Ein Betrieb baut „einen Bot für Vertrieb“ und „einen Bot für Projektstart“. Angebot und Kickoff-Protokoll nutzen unterschiedliche Strukturen, Pflichtfelder und Tonalität. Der Kunde merkt den Bruch; intern entsteht Doppelarbeit. Die Wertstrom-Alternative ist ein Outcome „kundenreifer Einstieg“ mit zwei Skills — Angebotsentwurf aus Notizen, Kickoff-Nacharbeit — und einem Owner für die Kette, oder zwei Ownern mit verbindlichem Übergabeformat. Weniger Oberflächen, mehr Anschlussfähigkeit.
 
-### Beispielmuster F: Status entlang der Lieferung
+### Beispielmuster E: Status entlang der Lieferung
 
 *(Muster.)*
 
@@ -55,13 +57,13 @@ Freiberufler und Solo-Setups haben keinen Konzernapparat, der den Zoo aufräumt.
 
 „Fokussiert“ ist keine Marketingfloskel. Es ist eine Kapazitätsgrenze: Was Sie nicht wöchentlich ansehen, veraltet. Was veraltet, wird riskant oder nutzlos — beides frisst Mandatszeit. Konkret heißt das ein Auftragstyp oder eine klare Orchesterrolle — etwa Recherche bündeln, Entwurf erzeugen, Qualität gegen Checkliste prüfen —, wenige Skills darunter mit Steckbrief, ein Kalender-Slot für Pflege, Kundengeheimnisse und Außenwirkung als menschliche Verantwortung (Kapitel 2 und 13), und Abschalten ohne Drama: Wenn ein Agent mehr Review als Nutzen erzeugt, fliegt er — nicht „irgendwann“.
 
-### Beispielmuster E: Drei-Rollen-Muster (analog, nicht dogmatisch)
+### Beispielmuster F: Drei-Rollen-Muster (analog, nicht dogmatisch)
 
 *(Muster.)*
 
 Viele Solo-Setups kommen mit drei schmalen Rollen aus — ob als drei Mini-Agenten oder als ein Agent mit drei Skill-Paketen: Vorbereitung und Recherche (Inputs sammeln, Lücken markieren, nichts zusagen), Entwurf (Struktur für Angebot, Protokoll, Status) und Qualität (Checkliste, Pflichtfelder, offene Risiken sichtbar). Der Mensch bleibt Owner für Preis und kundenreife Freigabe. Das Muster ist analog zu Kapitel 13, nicht Pflichtarchitektur. Wer nur einen wiederkehrenden Schritt hat, startet mit **einem** Skill — ohne Agenten-Theater.
 
-Sie sind im Zoo, wenn Sie nicht mehr wissen, welcher Prompt „der gute“ war; denselben Ablauf in drei Tools nachbauen; Review länger dauert als der frühere manuelle Schritt, ohne dass Inputs oder Qualitätsschwellen nachgeschärft wurden; Kundendaten „mal eben“ in unklare Kontexte wandern; oder neue Agenten starten, bevor alte einen Owner und ein Stop-Kriterium haben. Gegenmittel: stoppen, inventarisieren, maximal drei behalten, Rest abschalten. Abschalten ist Führungsaufgabe — auch wenn die Führung nur aus Ihnen besteht. Dieselbe Logik gilt im Mittelstand; Solo spürt den Zoo nur früher, weil niemand sonst aufräumt.
+Sie sind im Zoo, wenn Sie nicht mehr wissen, welcher Prompt „der gute“ war; denselben Ablauf in drei Tools nachbauen; Review länger dauert als der frühere manuelle Schritt, ohne dass Inputs oder Qualitätsschwellen nachgeschärft wurden; Kundendaten „mal eben“ in unklare Kontexte wandern; oder neue Agenten starten, bevor alte einen Owner und ein Stop-Kriterium haben. Gegenmittel: stoppen, inventarisieren, maximal drei behalten, Rest abschalten. Abschalten ist Führungsaufgabe — auch wenn die Führung nur aus Ihnen besteht. Dieselbe Logik gilt im Mittelstand (Diagnose Agenten-Zoo: Kapitel 1); Solo spürt den Zoo nur früher, weil niemand sonst aufräumt.
 
 ## Abgrenzung zu reiner Chat-Nutzung
 
@@ -79,7 +81,7 @@ Chat ist richtig, wenn Sie etwas Neues klären, einen Entwurf anstoßen oder ein
 
 Der praktische Test: Können Sie den Schritt in einem Satz ohne „irgendwie“ beschreiben und einer Vertretung übergeben? Wenn nein → noch Chat/Werkbank oder zuerst dokumentieren. Wenn ja → Skill prüfen. Wenn mehrere Skills orchestriert werden müssen → Agent prüfen. Eine ehrliche Zwischenform gibt es oft: Chat mit fester Checkliste daneben. Das ist noch kein Skill, aber besser als reines Improvisieren. Sobald dieselbe Checkliste und dieselbe Struktur mehrfach tragen, ist der Weg zum Skill kurz — und der Weg zum Agenten weiterhin optional.
 
-Rohumsetzung und Vorlagen gehören nicht in dieses Kapitel. Wer bauen will: **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)**.
+Rohumsetzung und Vorlagen gehören nicht in dieses Kapitel. Wer bauen will: Steckbrief im Buch (Kap. 1–2; kein Privat-Repo, kein Rohcode).
 
 ## Entscheidungsbaum: bauen / skillen / manuell lassen
 
@@ -101,7 +103,7 @@ Der Kurzpfad für Entscheider bleibt fünf Fragen: Ist der Workflow in einem Sat
 
 Schmerz: „Angebote dauern zu lange und werden uneinheitlich.“ Manuell lassen oder vereinfachen heißt oft: eine verbindliche Angebotsvorlage, Pflichtannahmen, Owner-Freigabe — und das ist häufig der größte Sprung. Skillen heißt: Skill „Angebot aus Kickoff-Notizen“ mit fester Struktur; Mensch setzt Preis und Scope. Agent heißt nur: Notizen holen, Skill ausführen, Ablage und Checkliste orchestrieren — mit Logs und Stopp vor Kundenversand. Dieselbe Schmerzbeschreibung, drei Interventionen. Wer immer bei „Agent“ startet, überspringt die billigeren Hebel.
 
-Geprüfte Praxisbelege für Teil I/III zieht Vera nach; bis dahin bleiben Musterkennzeichnungen und Entscheidungsregeln verbindlicher als Anekdoten mit erfundenen Kennzahlen.
+Geprüfte Quellen für Teil I stehen in **Anhang C**; bis dahin bleiben Musterkennzeichnungen und Entscheidungsregeln verbindlicher als Anekdoten mit erfundenen Kennzahlen.
 
 ## Häufige Fehlentscheidungen — schon als Filter
 
@@ -115,9 +117,9 @@ Die Fallen kehren in Kapitel 15 wieder; hier schon als Realitätsfilter: Bot pro
 
 **Freiberufler / Solo** entscheiden Fokus: ein Workflow, der morgen wiederkommt; maximal 1–3 fokussierte Agenten; Chat als Werkbank; Kundensicht und Haftung klar. Pflegezeit einplanen — sonst ist der „Gewinn“ nur verschobene Chaosarbeit.
 
-Keine Prozent-ROI, keine „Studien zeigen“, keine Erfolgsbilanz mit erfundenen Stunden. Der Mittelstand und Solo-Alltag brauchen **Entscheidbarkeit**: Checkliste, Wertstrom, Abgrenzung Chat, Entscheidungsbaum. Wer Zahlen und Fallbelege braucht, bekommt sie über geprüfte Quellen — Vera —, nicht über Buchbehauptungen.
+Keine Prozent-ROI, keine „Studien zeigen“, keine Erfolgsbilanz mit erfundenen Stunden. Der Mittelstand und Solo-Alltag brauchen **Entscheidbarkeit**: Checkliste, Wertstrom, Abgrenzung Chat, Entscheidungsbaum. Wer Zahlen und Fallbelege braucht, findet sie in **Anhang C**, nicht über Buchbehauptungen.
 
-Der nächste Schritt in Teil II ist Skill-Denken (Kapitel 4): Bausteine statt Prompt-Chaos. Wer den Realitätscheck ernst nimmt, kommt mit weniger Vorhaben und mehr Betriebstauglichkeit an.
+Der nächste Schritt in Teil II ist Skill-Denken (Kapitel 4): Fähigkeiten statt Prompt-Chaos. Wer den Realitätscheck ernst nimmt, kommt mit weniger Vorhaben und mehr Betriebstauglichkeit an.
 
 ## Grafik-Briefing
 
@@ -149,4 +151,4 @@ Checkliste und Entscheidungsbaum in den erlaubten Pfad übersetzen: Zugänge, Lo
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt durch die Stufen jagen: manuell lassen / vereinfachen / skillen / (nur falls nötig) schmalen Agenten. Inventur vorhandener Prompts und Tools; auf 1–3 Foki kürzen. Umsetzung später über Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode).
+Einen wiederkehrenden Schritt durch die Stufen jagen: manuell lassen / vereinfachen / skillen / (nur falls nötig) schmalen Agenten. Inventur vorhandener Prompts und Tools; auf 1–3 Foki kürzen. Umsetzung später über den Steckbrief im Buch.

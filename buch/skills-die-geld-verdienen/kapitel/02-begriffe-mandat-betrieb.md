@@ -1,7 +1,7 @@
 ---
 title: "Begriffe, die im Mandat und im Betrieb halten"
 chapter: 2
-status: entwurf
+status: lektorat-auflagen
 author: Mara
 date: 2026-09-07
 book: Skills, die Geld verdienen
@@ -31,11 +31,11 @@ Ein Workflow ist die Wahrheitsebene. Skills und Agenten sind Umsetzungsmittel. W
 
 Eine **Routine** ist ein Workflow, der so oft und so gleichartig läuft, dass er betrieblich „auf Schiene“ darf — inklusive Trigger, Zuständigkeit und Qualitätscheck. Routinen sind gefährlich, wenn sie zu früh kommen: Automatisieren Sie nur, was manuell schon funktioniert. Kapitel 9 behandelt Betrieb und Eskalation.
 
-Merksatz: **Routine folgt Bewährung, Bewährung folgt manuellem Ablauf.** Wer die Reihenfolge umkehrt, kauft sich Eskalationen ein. Bewährt sich ein Schritt, wird daraus oft der Wunsch nach einem Baustein — dem Skill.
+Merksatz: **Routine folgt Bewährung, Bewährung folgt manuellem Ablauf.** Wer die Reihenfolge umkehrt, kauft sich Eskalationen ein. Bewährt sich ein Schritt, wird daraus oft der Wunsch nach einer festgehaltenen Fähigkeit — dem Skill.
 
 ### Skill
 
-Ein **Skill** ist eine wiederholbare, prüfbare, übergebbare Fähigkeit mit einem klaren Outcome. Er ist kein Chat-Verlauf und kein Abteilungs-Bot. Er hat benennbare Inputs und Outputs und Qualitätskriterien, an denen ein Mensch ihn abnehmen kann. Skills sind die Bausteine; Agenten orchestrieren sie. Details und Anti-Patterns: Kapitel 4 und 8. Implementierungsvorlagen: **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)** — nicht als Rohcode in diesem Buch.
+Ein **Skill** ist eine wiederholbare, prüfbare, übergebbare Fähigkeit mit einem klaren Outcome (Landkarte Chat → Assistent → Agent → Skill: Kapitel 1). Er ist kein Chat-Verlauf und kein Abteilungs-Bot. Er hat benennbare Inputs und Outputs und Qualitätskriterien, an denen ein Mensch ihn abnehmen kann. Skills sind die wiederholbaren Fähigkeiten; Agenten orchestrieren sie. Details und Anti-Patterns: Kapitel 4 und 8. Implementierungsvorlagen: **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)** — nicht als Rohcode in diesem Buch. <!-- LEKTOR @Klaus: kanonische URL nachziehen. -->
 
 ### Agent
 
@@ -73,9 +73,9 @@ Drei Eigenschaften entscheiden, ob etwas ein Skill ist oder nur ein netter Promp
 
 Was ein Skill **nicht** ist: ein einmaliger Chat-Thread; „unser Marketing-Bot“ ohne Outcome-Grenze; eine versteckte Rechteausweitung („darf mal eben alles lesen“); ein Ersatz für Strategie oder Preisentscheidung.
 
-Gute Skill-Grenzen folgen der Regel: **ein Outcome**. Wenn Sie „recherchieren, schreiben, layouten und versenden“ in einen Baustein pressen, verlieren Sie Prüfbarkeit und Freigabe. Besser: getrennte Skills und ein Agent oder Mensch, der orchestriert.
+Gute Skill-Grenzen folgen der Regel: **ein Outcome**. Wenn Sie „recherchieren, schreiben, layouten und versenden“ in eine Fähigkeit pressen, verlieren Sie Prüfbarkeit und Freigabe. Besser: getrennte Skills und ein Agent oder Mensch, der orchestriert.
 
-Steckbrief-Denke ohne Code: Name des Skills, Outcome in einem Satz, Inputs, Outputs, Qualitätscheck, Owner, was der Skill bewusst *nicht* darf. Mehr braucht die Fachseite für den Start. Die technische Form liegt im **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)**. Was der Skill nicht darf, führt direkt zur nächsten Linie — der Verantwortungsgrenze.
+Steckbrief-Denke ohne Code: Name des Skills, Outcome in einem Satz, Inputs, Outputs, Qualitätscheck, Owner, was der Skill bewusst *nicht* darf. Mehr braucht die Fachseite für den Start. Die technische Form liegt im Steckbrief im Buch (siehe oben). Was der Skill nicht darf, führt direkt zur nächsten Linie — der Verantwortungsgrenze.
 
 ## Was bewusst menschlich bleibt
 
@@ -126,7 +126,9 @@ Die vollständige Liste steht in **Anhang A**. Hier die Arbeitsdefinitionen für
 | Freigabe | Ausdrückliche Erlaubnis für kritische Aktion/Ausgabe |
 | Skill-Bibliothek | Gemeinsamer, versionierter Ort für Skills (kein Abteilungs-Zoo) |
 
-Wenn ein Meeting diese Wörter unterschiedlich benutzt: stoppen, angleichen, weiter. Zehn Minuten Begriffsklarheit sparen Wochen Nacharbeit — und jede der drei Leserrollen braucht eine leicht andere Übersetzung derselben Wörter.
+Wenn ein Meeting diese Wörter unterschiedlich benutzt: stoppen, angleichen, weiter. Zehn Minuten Begriffsklarheit sparen Wochen Nacharbeit.
+
+<!-- LEKTOR @Alfred: Glossar-Kern hier vs. Anhang A — Scope klären, ob Tabelle später nur im Anhang steht. -->
 
 ## Sprache für drei Leser
 
@@ -138,7 +140,7 @@ Ein kurzer Übersetzungstest: Lässt sich Ihr Vorhaben in den Sätzen „Outcome
 
 ## Vom Begriff zur Praxis — ohne Code im Buch
 
-Dieses Buch erklärt Skills und Agenten **inhaltlich**: Steckbriefe, Qualitätskriterien, Betriebsregeln. Es druckt keine Skill-Rohdateien und keine YAML-Dumps. Wer bauen will, legt Outcome und Grenze fest (Kapitel 4), beschreibt Steckbrief und Tests (Kapitel 8), nutzt Umsetzung und Vorlagen im **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)** und sichert Freigabe und Betrieb (Kapitel 5 und 9).
+Dieses Buch erklärt Skills und Agenten **inhaltlich**: Steckbriefe, Qualitätskriterien, Betriebsregeln. Es druckt keine Skill-Rohdateien und keine YAML-Dumps. Wer bauen will, legt Outcome und Grenze fest (Kapitel 4), beschreibt Steckbrief und Tests (Kapitel 8), nutzt Umsetzung und Vorlagen im Steckbrief im Buch und sichert Freigabe und Betrieb (Kapitel 5 und 9).
 
 So bleibt das Buch für GF lesbar, für IT anschlussfähig und für Solo umsetzbar — ohne dass ein Buchkapitel zur veralteten Codekopie wird. Bevor der Bau beginnt, lohnt noch der Blick auf die Fallen, in denen Begriffe besonders oft verrutschen.
 
@@ -154,7 +156,7 @@ So bleibt das Buch für GF lesbar, für IT anschlussfähig und für Solo umsetzb
 
 **„Human-in-the-Loop“** ohne Termin und Person ist keine Schleife, sondern Hoffnung.
 
-Regulatorischer Anker (kein Rechtsersatz): Primärquelle ist die **Verordnung (EU) 2024/1689** (AI Act), EUR-Lex: https://eur-lex.europa.eu/eli/reg/2024/1689/oj (**Verifiziert**, Vera). Für die Betriebsbegriffe in diesem Kapitel:
+Regulatorischer Anker (kein Rechtsersatz): Primärquelle ist die **Verordnung (EU) 2024/1689** (AI Act) — Kurzbeleg `(VO (EU) 2024/1689)`; URLs und Status in **Anhang C**. Für die Betriebsbegriffe in diesem Kapitel:
 
 Menschliche Aufsicht und Transparenzpflichten werden im AI Act risikobasiert ausgestaltet; die detaillierte Artikel-Zuordnung folgt in **Kapitel 6** mit Nummern aus dem konsolidierten Text. Bis dahin gilt die Buchdefinition: Human-in-the-Loop und Freigabe sind **betriebliche Designentscheidungen** — juristische Feinheit und Fristen nur mit Fachberatung und Kap. 6.
 
@@ -192,4 +194,4 @@ Begriffe in Architektur und Betriebshandbuch light übersetzen: Identitäten, Zu
 
 ### Was Solo / Freiberufler morgen starten können
 
-Ein Blatt (oder eine Notiz): eigener Mini-Glossar mit Workflow, Skill, Owner, Freigabe — und die Regel „Was zum Kunden geht, hat Freigabe“. Ersten Skill nur für einen Outcome skizzieren; Bau später über Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode).
+Ein Blatt (oder eine Notiz): eigener Mini-Glossar mit Workflow, Skill, Owner, Freigabe — und die Regel „Was zum Kunden geht, hat Freigabe“. Ersten Skill nur für einen Outcome skizzieren; Bau später über den Steckbrief im Buch.

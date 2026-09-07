@@ -169,7 +169,7 @@ Jedes Praxiskapitel endet mit: *Was GF entscheidet / Was IT umsetzt / Was Solo m
 |--------|--------|
 | A | Glossar |
 | B | Checklisten (Entscheidungsbaum, Skill-Steckbrief, Pilot-Gate, Sicherheitsmindest) |
-| C | Quellenverzeichnis (Vera pflegt; nur geprüfte Einträge) |
+| C | Quellenverzeichnis — zentral am Buchende; Kurzbelege im Fließtext; nur geprüfte Einträge (Vera-Status) |
 | D | Beispiel-Skills & Weiterführendes (Steckbriefe; kein Privat-Repo; optional Companion nach Freigabe) |
 | E | Großes Impressum (Text von Hans, letzte Seite) |
 

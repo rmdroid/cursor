@@ -9,15 +9,9 @@ book: Skills, die Geld verdienen
 
 # Recht, Risiko, EU AI Act — pragmatisch
 
-Dieses Kapitel gibt Orientierung für Geschäftsführung, IT und Freiberufler — **kein Rechtsersatz**. Es ersetzt keine anwaltliche Prüfung, keine Datenschutz-Folgenabschätzung und keine konformitätsrechtliche Beratung. Vor Druck und vor verbindlichen Freigaben im Betrieb: die **deutsche konsolidierte Fassung** der KI-Verordnung noch einmal gegenlesen und bei Zweifel Fachberatung einholen. Fristen und Artikelnummern hier stammen aus dem Vera-Quellenbriefing (Abruf 7. September 2026); der reine 2024er Amtsblatttext ist für Hochrisiko-Termine nach dem Omnibus **veraltet**.
+Dieses Kapitel gibt Orientierung für Geschäftsführung, IT und Freiberufler — **kein Rechtsersatz**. Es ersetzt keine anwaltliche Prüfung, keine Datenschutz-Folgenabschätzung und keine konformitätsrechtliche Beratung. Vor Druck und vor verbindlichen Freigaben im Betrieb: die **deutsche konsolidierte Fassung** der KI-Verordnung noch einmal gegenlesen und bei Zweifel Fachberatung einholen. Fristen und Artikelnummern hier: Stand Vera-Briefing / Spot-Check 7. September 2026; der reine 2024er Amtsblatttext ist für Hochrisiko-Termine nach dem Omnibus **veraltet**. URLs und Status: **Anhang C**.
 
-Primäranker:
-
-- **Verordnung (EU) 2024/1689** (KI-Verordnung / AI Act) — https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=de
-- **Verordnung (EU) 2026/1744** (Digital Omnibus on AI) — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744
-- **Konsolidierte Fassung** Stand **27.07.2026** — https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02024R1689-20260727
-
-Für Fristen und Hochrisiko-Termine immer die konsolidierte Fassung bzw. die Omnibus-Änderung zitieren — nicht nur den Originaltext von 2024.
+Primäranker (Kurzbelege): `(VO (EU) 2024/1689; Omnibus 2026/1744)`, `(konsolidiert 27.07.2026)`. Für Fristen und Hochrisiko-Termine immer die konsolidierte Fassung bzw. die Omnibus-Änderung zitieren — nicht nur den Originaltext von 2024.
 
 ## Warum Recht hier Betriebsentscheidung ist
 
@@ -39,11 +33,11 @@ Im Primärrecht sind die zentralen Blöcke klar benannt — das ist die Sprache,
 
 Die Labels **„limited risk“** / **„minimal risk“** stammen vor allem aus **Kommissionskommunikation** (offizielle Policy-Darstellung der Risikostufen auf der AI-Act-Seite der Kommission). Sie sind hilfreich für die Erzählung und für Folien, aber **keine eigenen Kapitelüberschriften** der Verordnung. Im Buch deshalb: wenn „Transparenzrisiko“ oder „Alltagsanwendung ohne spezielles Regime“, immer an Art. 50 bzw. den Restbereich koppeln — nicht so tun, als stünden „Limited“ und „Minimal“ als VO-Kapitel da.
 
-Grobe Einordnung für den Alltag — Kommunikation plus Primärrecht: **Inakzeptabel / verboten (Art. 5)** umfasst bestimmte manipulative oder ausbeuterische Praktiken mit erheblichem Schaden, Social Scoring, bestimmtes Predictive Policing, ungezieltes Scraping für Gesichtserkennungs-Datenbanken, Emotionserkennung am Arbeitsplatz und in Bildung (mit Ausnahmen), bestimmte biometrische Kategorisierung sowie Echtzeit-Fernidentifikation in öffentlich zugänglichen Räumen (enge Ausnahmen). Der Omnibus ergänzt u. a. Verbote zu nicht-einvernehmlichen intimen bzw. CSAM-bezogenen Inhalten; neue Verbote dieser Art greifen laut Omnibus ab **02.12.2026**. Die Kommission hat dazu Leitlinien zu verbotenen Praktiken veröffentlicht (Publication 04.02.2025) — Auslegungshilfe, nicht Ersatz für den Verordnungstext.
+Grobe Einordnung für den Alltag — Kommunikation plus Primärrecht: **Inakzeptabel / verboten (Art. 5)** umfasst bestimmte manipulative oder ausbeuterische Praktiken mit erheblichem Schaden, Social Scoring, bestimmtes Predictive Policing, ungezieltes Scraping für Gesichtserkennungs-Datenbanken, Emotionserkennung am Arbeitsplatz und in Bildung (mit Ausnahmen), bestimmte biometrische Kategorisierung sowie Echtzeit-Fernidentifikation in öffentlich zugänglichen Räumen (enge Ausnahmen). Der Omnibus ergänzt u. a. Verbote zu nicht-einvernehmlichen intimen bzw. CSAM-bezogenen Inhalten; neue Verbote dieser Art greifen laut Omnibus ab **02.12.2026**. Die Kommission hat dazu Leitlinien zu verbotenen Praktiken veröffentlicht `(EC Guidelines Art. 5)` — Auslegungshilfe, nicht Ersatz für den Verordnungstext.
 
 **Hochrisiko (Art. 6)** meint Systeme nach **Anhang I** (Sicherheitsbauteile regulierter Produkte, Art. 6 Abs. 1) und Anwendungsfälle nach **Anhang III** (u. a. Biometrie, kritische Infrastruktur, Bildung, Beschäftigung/HR, essentielle Dienste, Strafverfolgung, Migration, Justiz — Art. 6 Abs. 2), mit Ausnahmen in Art. 6 Abs. 3–4. Wer eine Ausnahme nutzt, muss die Einstellungslogik dokumentieren können — „wir glauben nicht, dass es hochriskant ist“ reicht betrieblich nicht.
 
-**Transparenz (Art. 50)** verlangt: Interaktion mit KI kenntlich machen; synthetische Inhalte maschinenlesbar kennzeichnen; Deepfakes und bestimmte Texte labeln. Kommissions-Leitlinien zu Art. 50: Publication **20.07.2026** (Last update 31.07.2026); Anwendung **ab 02.08.2026**.
+**Transparenz (Art. 50)** verlangt: Interaktion mit KI kenntlich machen; synthetische Inhalte maschinenlesbar kennzeichnen; Deepfakes und bestimmte Texte labeln. Kommissions-Leitlinien zu Art. 50: `(EC Guidelines Art. 50)`; Anwendung **ab 02.08.2026**.
 
 Im **Restbereich** liegen viele Alltagsanwendungen ohne spezielles KI-VO-Regime — die Kommission nennt u. a. Spamfilter und KI in Spielen. Querschnittspflichten wie **Art. 4** (KI-Kompetenz) können trotzdem greifen.
 
@@ -85,7 +79,7 @@ Kurz, betrieblich gelesen — Detailzitate immer gegen die konsolidierte DE-Fass
 | **Art. 62** | KMU-Maßnahmen: u. a. Vorrang Reallabore, Schulung, Kanäle, Gebührenreduktion, Informationsplattform, Vorlagen. |
 | **Art. 113** | Anwendungstermine — **nach Omnibus** lesen. |
 
-Offizielle KMU-Anlaufstelle der EU: **AI Act Service Desk / Single Information Platform** — https://ai-act-service-desk.ec.europa.eu/en (Informationsplattform laut Art. 62 Abs. 3). Ergänzend hilfreich, aber Sekundärquellen: Bitkom-Umsetzungsleitfaden, Mittelstand-Digital-Handbuch KI-Verordnung für KMU, BNetzA-Factsheet KMU/Start-ups, BSI QUAIDAL (Datenqualität — technisch, kein vollständiger Rechtsleitfaden).
+Offizielle KMU-Anlaufstelle der EU: **AI Act Service Desk** `(AI Act Service Desk)` (Informationsplattform laut Art. 62 Abs. 3; URL in Anhang C). Ergänzend hilfreich, aber Sekundärquellen: `(Bitkom Umsetzungsleitfaden 2.0)`, `(Mittelstand-Digital KI-VO Handbuch)`, `(BNetzA Factsheet KMU)`, `(BSI QUAIDAL)` (Datenqualität — technisch, kein vollständiger Rechtsleitfaden).
 
 ## Dokumentation, Transparenz, Aufsicht im Alltag
 
@@ -136,7 +130,7 @@ Keine abschließende Einstufung Ihres konkreten Systems. Kein nationales Durchf�
 | Transparenz (Art. 50) | Interaktion mit KI? Synthetische Inhalte / Deepfakes? | Kennzeichnung; Betriebsregel für Chatbots und Medien; Leitlinien Art. 50 | ab 02.08.2026 (Übergang Art. 50 Abs. 2 beachten) |
 | Rest / Alltag (kein spezielles Regime) | Nur Assistenz ohne Anhang-Nähe? | Trotzdem: Art. 4 Kompetenz, Owner, Freigabe, Datenminimierung, Secrets | laufend |
 
-**Fußzeile:** „Labels limited/minimal = Kommissionskommunikation, keine VO-Kapitelüberschriften. Primär: VO (EU) 2024/1689, geändert durch VO (EU) 2026/1744; konsolidiert 27.07.2026.“
+**Fußzeile:** „Labels limited/minimal = Kommissionskommunikation, keine VO-Kapitelüberschriften. Primär: `(VO (EU) 2024/1689; Omnibus 2026/1744)`; `(konsolidiert 27.07.2026)` — Details Anhang C.“
 
 **Nicht zeigen:** erfundene Bußgeldhöhen, Produktlogos als Empfehlung, ROI, „wir sind compliant“-Siegel, Codeblöcke.
 
@@ -148,7 +142,7 @@ Dass KI-Vorhaben risikoklassifiziert und mit Owner versehen werden; dass verbote
 
 ### Was die IT-Leitung umsetzt
 
-Inventar der Skills/Agenten; Zugangs- und Secret-Management; Logging und Abschaltbarkeit; Kennzeichnung nach Art. 50 in Frontends und Content-Pipelines; Steckbriefe mit Grenzen (Art.-13-Logik); bei Anhang-Nähe technische Dokumentation und Oversight-Hooks (Art. 9–14) vorbereiten; Service-Desk- und konsolidierte EUR-Lex-Links im Betriebshandbuch light.
+Inventar der Skills/Agenten; Zugangs- und Secret-Management; Logging und Abschaltbarkeit; Kennzeichnung nach Art. 50 in Frontends und Content-Pipelines; Steckbriefe mit Grenzen (Art.-13-Logik); bei Anhang-Nähe technische Dokumentation und Oversight-Hooks (Art. 9–14) vorbereiten; Service-Desk- und konsolidierte EUR-Lex-Verweise aus Anhang C im Betriebshandbuch light.
 
 ### Was Solo / Freiberufler morgen starten können
 

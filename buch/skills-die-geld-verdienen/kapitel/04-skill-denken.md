@@ -146,7 +146,7 @@ Kapitel 8 vertieft Bau und Qualitätskriterien; Kapitel 15 sammelt Fehler und Ge
 
 ## Anschluss an Orientierung und Ausblick
 
-Kapitel 1 hat gezeigt, warum Anhaftung zählt — und mit KfW Research (Fokus 554, **Verifiziert**, Vera) eingeordnet, dass KI im Mittelstand angekommen ist, oft noch als Einzelnutzung statt als prüfbare Skills. Dieses Kapitel liefert den Baustein-Weg dorthin: Grenzen, Lebenszyklus, Pflege. Keine neuen Prozentbehauptungen, kein ROI-Theater — und keine zusätzlichen Zahlenclaims über die bereits geprüften Einordnungen hinaus.
+Kapitel 1 hat gezeigt, warum Anhaftung zählt — und mit KfW Fokus 554 eingeordnet (vgl. Anhang C), dass KI im Mittelstand angekommen ist, oft noch als Einzelnutzung statt als prüfbare Skills. Dieses Kapitel liefert den Baustein-Weg dorthin: Grenzen, Lebenszyklus, Pflege. Keine neuen Prozentbehauptungen, kein ROI-Theater — und keine zusätzlichen Zahlenclaims über die bereits geprüften Einordnungen hinaus.
 
 Lesepfad light: GF liest Grenzen, Lebenszyklus-Freigabe und die Abschlussblöcke; IT liest Bibliothek, Versionierung und Anti-Patterns zu Rechten; Solo liest Angebot-aus-Kickoff-Muster, Mini-Entscheidung und den Pflege-Slot. Gemeinsam gilt: Bausteine schlagen Bots.
 

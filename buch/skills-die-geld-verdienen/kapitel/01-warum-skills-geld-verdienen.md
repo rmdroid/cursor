@@ -1,7 +1,7 @@
 ---
 title: "Warum Skills Geld verdienen (und Chat oft nicht)"
 chapter: 1
-status: entwurf
+status: lektorat-auflagen
 author: Mara
 date: 2026-09-07
 book: Skills, die Geld verdienen
@@ -17,17 +17,19 @@ Deshalb dreht dieses Buch die Perspektive: weg vom einmaligen Dialog mit einem M
 
 Geschäftsführung und IT-Leitung kennen die Symptome: wiederkehrende Arbeit, die fachlich anspruchsvoll genug ist, um Zeit zu kosten, aber zu standardisierbar, um sie jedes Mal von null zu denken. Freiberufler kennen dasselbe in Miniatur — Angebot schreiben, Kickoff nachbereiten, Status an den Kunden, Dokumentation für die nächste Runde. Es geht nicht um Magie und nicht um Marktprognosen. Es geht um die einfache Frage: **Welche Arbeit wiederholt sich so oft und so ähnlich, dass sich eine feste, prüfbare Fähigkeit lohnt?**
 
-Drei Kräfte treiben das — belegt dort, wo Vera Primärquellen geliefert hat, sonst als Muster.
+Drei Kräfte treiben das — belegt mit Kurzbelegen (Details: Anhang C), sonst als Muster.
 
-**Fachliche Engpässe.** Wenige Köpfe tragen viele wiederkehrende Schritte. Bleiben diese Schritte unklar, hängt Qualität an Tagesform und Erinnerung. Das IAB beschreibt für 2025/2026 einen Arbeitsmarkt, der durch den demografischen Wandel gebremst wird: Das Erwerbspersonenpotenzial sinkt 2026 erstmals (laut IAB um ca. 40.000); Fachkräftesicherung rückt damit weiter nach vorn. (IAB-Prognose 2025/2026 bzw. IAB-Kurzbericht kb2025-19 — **Verifiziert**, Vera.)
+**Fachliche Engpässe.** Wenige Köpfe tragen viele wiederkehrende Schritte. Bleiben diese Schritte unklar, hängt Qualität an Tagesform und Erinnerung. Das IAB beschreibt für 2025/2026 einen Arbeitsmarkt, der durch den demografischen Wandel gebremst wird: Das Erwerbspersonenpotenzial sinkt 2026 erstmals; Fachkräftesicherung rückt damit weiter nach vorn. (IAB kb2025-19)
 
-**Prozesskosten im Alltag.** Nicht die große Transformation frisst Marge, sondern das ständige Neuaufsetzen: gleicher Auftragstyp, neuer Prompt-Chaos-Thread, andere Ablage, andere Qualitätslücke. Für Euro- oder Prozentangaben zu Prozesskosten fehlt bisher eine belastbare Primärquelle — deshalb hier **Muster**, keine Behauptungszahl. (Vera: Status Unklar.)
+<!-- LEKTOR: Vera — frühere Formulierung „um ca. 40.000“ in Paste/Briefing nicht als tragfähige Zahl belegt. Erst nach Primärcheck aus kb2025-19/Presse wieder einsetzen oder dauerhaft streichen. -->
+
+**Prozesskosten im Alltag.** Nicht die große Transformation frisst Marge, sondern das ständige Neuaufsetzen: gleicher Auftragstyp, neuer Prompt-Chaos-Thread, andere Ablage, andere Qualitätslücke. Für Euro- oder Prozentangaben zu Prozesskosten fehlt bisher eine belastbare Primärquelle — deshalb hier **Muster**, keine Behauptungszahl. (Prozesskosten — Unklar; siehe Anhang C)
 
 **Wettbewerb um Durchlauf und Verlässlichkeit.** Kunden und interne Stakeholder merken, ob Sie „schnell und wiederholbar“ liefern — oder „heute gut, morgen improvisiert“. Wer Verlässlichkeit will, braucht mehr als einen guten Prompt-Tag.
 
-Zur Einordnung der Ausgangslage: Laut KfW Research (Fokus Volkswirtschaft Nr. 554, 29. Juli 2026, Dr. Volker Zimmermann; Erhebung 2022–2024 / KfW-Mittelstandspanel 2025) nutzen **20 %** der mittelständischen Unternehmen mindestens eine KI-Technologie; am häufigsten Erzeugung natürlicher Sprache (14 %) und Texterkennung (10 %). Entscheidender als reine Unternehmensgröße sind Digitalisierungsgrad, Know-how und Innovativität. Das ist kein Agenten-ROI und keine Aufforderung zum Tool-Zoo — es zeigt: KI ist im Mittelstand angekommen, oft noch als Einzelnutzung statt als prüfbare Skills. (KfW Fokus 554 — **Verifiziert**, Vera.)
+Zur Einordnung der Ausgangslage: Laut KfW Research nutzen **20 %** der mittelständischen Unternehmen mindestens eine KI-Technologie; am häufigsten Erzeugung natürlicher Sprache (14 %) und Texterkennung (10 %). Entscheidender als reine Unternehmensgröße sind Digitalisierungsgrad, Know-how und Innovativität. Das ist kein Agenten-ROI und keine Aufforderung zum Tool-Zoo — es zeigt: KI ist im Mittelstand angekommen, oft noch als Einzelnutzung statt als prüfbare Skills. (KfW Fokus 554)
 
-Amtlich ergänzt die Destatis-IKT-Erhebung 2025 das Bild für Unternehmen ab 10 Beschäftigten: **26 %** nutzen KI; nach Größenklassen etwa **23 / 36 / 57 %** (kleine / mittlere / große). Das ist eine andere Grundgesamtheit als das KfW-Mittelstandspanel — die Zahlen **nicht vermischen**. Bitkom-Werte (andere Abschneidegrenze) gehören ebenfalls nicht in denselben Satz. (Destatis IKT 2025 — **Verifiziert**, Vera.)
+Amtlich ergänzt die Destatis-IKT-Erhebung 2025 das Bild für Unternehmen ab 10 Beschäftigten: **26 %** nutzen KI; nach Größenklassen etwa **23 / 36 / 57 %** (kleine / mittlere / große). Das ist eine andere Grundgesamtheit als das KfW-Mittelstandspanel — die Zahlen **nicht vermischen**. Bitkom-Werte (andere Abschneidegrenze) gehören ebenfalls nicht in denselben Satz. (Destatis IKT 2025; vgl. Anhang C)
 
 Dazu kommt ein vierter, oft unterschätzter Effekt: **Übergabeverlust**. Wenn nur eine Person den „guten Prompt“ kennt, fällt Vertretung aus, Urlaub wird riskant, und Wissen wandert mit dem Laptop. Skills machen Fähigkeiten übergebbar — an Kollegen, an IT-Betrieb, an einen schmalen Agenten mit klaren Grenzen. Genau deshalb lohnt der nächste Blick auf die Begriffe, die im Alltag oft in einen Topf fallen.
 
@@ -51,7 +53,7 @@ Assistenten werden nützlicher, wenn sie auf **benannte Skills** zugreifen statt
 
 Ein Agent ist mehr als Chat: Er bekommt ein Ziel, führt Schritte aus, kann Tools oder Daten anbinden und liefert ein Ergebnis entlang eines Ablaufs. Im Betrieb zählt, dass ein Agent **nicht** „alles darf“. Er braucht Owner, Freigabe, Logging und klare Stopps. Ein Agent ohne Skills ist oft nur ein langer Prompt mit Hoffnung. Ein Agent mit Skills ist ein Orchester mit benannten Instrumenten.
 
-Wichtig für die Erwartungshaltung: Ein Agent „denkt“ nicht die Firma. Er führt einen Auftrag in Grenzen aus. Wenn die Grenzen fehlen, ist das kein Technikproblem, sondern ein Organisationsproblem — und die Lösung beginnt beim Baustein darunter.
+Wichtig für die Erwartungshaltung: Ein Agent „denkt“ nicht die Firma. Er führt einen Auftrag in Grenzen aus. Wenn die Grenzen fehlen, ist das kein Technikproblem, sondern ein Organisationsproblem — und die Lösung beginnt bei der Fähigkeit darunter — dem Skill.
 
 ### Skill: die wiederholbare Fähigkeit
 
@@ -59,11 +61,13 @@ Ein Skill ist die kleinste sinnvolle Einheit, die Sie bauen, testen und übergeb
 
 > Ein Skill verdient Geld, wenn er einen wiederkehrenden Schritt so festmacht, dass Zeit, Fehler und Übergabeaufwand sinken — ohne dass Strategie, Geld, Recht oder finale Freigabe an die Maschine abgegeben werden.
 
-Rohcode und Dateiformate gehören nicht ins Buch. Wer implementieren will, findet die kanonischen Vorlagen im **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)**. Mit dieser Landkarte wird die nächste Frage greifbar: Welcher Workflow verdient überhaupt einen solchen Baustein?
+Rohcode und Dateiformate gehören nicht ins Buch. Wer implementieren will, findet die kanonischen Vorlagen im **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)**. <!-- LEKTOR @Klaus: kanonische öffentliche URL nachziehen, sobald Companion freigegeben. --> Mit dieser Landkarte wird die nächste Frage greifbar: Welcher Workflow verdient überhaupt eine solche Fähigkeit?
 
 ## Welche Workflows ein Skill verdienen
 
-Nicht jeder Workflow braucht einen Skill. Manche brauchen Vereinfachung, manche bleiben manuell — und das ist gut so. Ein Skill lohnt sich typischerweise, wenn der Schritt häufig wiederkehrt oder teuer wird, wenn er schiefgeht; wenn Inputs und Outputs sich benennen lassen (nicht: „mach mal was Schönes“); wenn es ein prüfbares Qualitätskriterium gibt; wenn mehrere Personen oder Mandate dieselbe Qualität bekommen sollen; und wenn der Schritt fachlich klar genug ist, um ihn zu übergeben — an einen Kollegen, an IT, an einen Agenten mit Skill.
+Nicht jeder Workflow braucht einen Skill. Manche brauchen Vereinfachung, manche bleiben manuell — und das ist gut so.
+
+Ein Skill lohnt sich typischerweise dann, wenn mehrere dieser Punkte zusammentreffen: Der Schritt kommt häufig wieder oder wird teuer, wenn er schiefgeht. Inputs und Outputs lassen sich benennen — nicht: „mach mal was Schönes“. Es gibt ein prüfbares Qualitätskriterium. Mehrere Personen oder Mandate sollen dieselbe Qualität bekommen. Und der Schritt ist fachlich klar genug, um ihn zu übergeben — an einen Kollegen, an IT, an einen Agenten mit Skill.
 
 Die Gegenprobe ist ebenso wichtig: Wenn der Kontext jedes Mal neu ist, wenn die Entscheidung politisch oder rechtlich heikel ist, oder wenn niemand den Output ernsthaft prüfen will — dann zuerst klären, nicht skillen. Kapitel 3 liefert den Realitätscheck; Kapitel 7 die Methode vom Prozess zum Agenten. Bis dahin helfen Alltagsmuster, die Entscheidung zu schärfen.
 
@@ -97,13 +101,13 @@ Ein verbreiteter Reflex: Marketing bekommt einen Bot, Vertrieb einen, Buchhaltun
 
 Warum das scheitert, liegt selten an der Technik. Abteilungen sind keine Wertströme: Der Kunde erlebt Angebot → Kickoff → Lieferung → Abnahme. Wenn jeder Bereich seinen eigenen Bot baut, entstehen Brüche genau an den Übergaben. Skills skalieren besser als Bots — dieselbe Fähigkeit „Statusbericht strukturieren“ braucht man in mehreren Kontexten; ein Skill in einer Bibliothek schlägt zehn fast gleiche Chat-Vorlagen. Ownership verdünnt sich, wenn „der Bot der Abteilung“ niemanden hat, der Qualität, Freigabe und Abschaltung verantwortet. Und Freiberufler zahlen den Zoo teurer: Wer allein arbeitet, kann sich keinen Zoo leisten. Ein bis drei fokussierte Agenten mit klaren Skills schlagen fünf halb fertige Experimente.
 
-Die Gegenbewegung lautet: **wenige Outcomes, klare Owner, Skills als Bausteine**. Weniger glänzende Demos, mehr wiederholbare Ergebnisse. Kapitel 5 behandelt Ownership; Kapitel 15 die typischen Fehler inklusive Bot-Zoo.
+Die Gegenbewegung lautet: **wenige Outcomes, klare Owner, Skills in einer gemeinsamen Bibliothek**. Weniger glänzende Demos, mehr wiederholbare Ergebnisse. Kapitel 5 behandelt Ownership; Kapitel 15 die typischen Fehler inklusive Bot-Zoo.
 
 Ein zweiter, verwandter Irrtum: „Wir automatisieren alles, was Tippen ist.“ Tippen ist nicht das Problem. **Unklare Entscheidungen und fehlende Freigaben** sind es. Wer Murks automatisiert, bekommt schnelleren Murks — und genau deshalb starten die Einstiege unten als Muster, nicht als Erfolgsstory.
 
 ## Einstiegsszenarien — als Muster, nicht als Erfolgsstory
 
-Die folgenden Einstiege bleiben **Musterkennzeichnungen** (keine freigegebenen Fallstudien, keine erfundenen Kennzahlen). Echte, freigegebene Praxisbeispiele: noch **Unklar** — folgen nur mit dokumentierter Quelle und Freigabe (Vera).
+Die folgenden Einstiege bleiben **Musterkennzeichnungen** (keine freigegebenen Fallstudien, keine erfundenen Kennzahlen). Echte, freigegebene Praxisbeispiele: noch **Unklar** — folgen nur mit dokumentierter Quelle und Freigabe (siehe Anhang C).
 
 ### Muster Geschäftsführung: Portfolio statt Spielerei
 
@@ -123,7 +127,7 @@ Solo startet nicht mit einer Plattform-Roadmap. Ein wiederkehrender Schritt — 
 
 Solo-Regel: Lieber ein harter Skill als drei weiche Experimente. Zeit für Pflege muss in den Kalender — sonst entsteht derselbe Zoo wie im Konzern, nur ohne IT-Abteilung, die aufräumt. Ob Konzern oder Solo: Am Ende zählt, was anhaftet — und was nur beeindruckt.
 
-## Was Geld verdient — und was nur Zeit fühlt
+## Was Geld verdient — und was nur beeindruckt
 
 Chat verdient selten Geld, weil der Nutzen **nicht anhaftet**. Skills verdienen Geld, wenn sie Zeit in wiederkehrenden Schritten freimachen (ohne dass Review-Zeit explodiert), Qualität vergleichbarer machen, Übergabe ermöglichen und Freigabe sichtbar halten. Der Mensch entscheidet das Entscheidende — das bleibt die Linie.
 
@@ -166,4 +170,4 @@ Zugänge, Logging und Datengrenzen für erste Skills/Agenten; erlaubten Pfad sta
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) aufschreiben: Inputs, Output, Prüfpunkte — und daraus den ersten Skill-Entwurf machen, ohne einen Zoo zu bauen. Umsetzungshilfe: Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode).
+Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) aufschreiben: Inputs, Output, Prüfpunkte — und daraus den ersten Skill-Entwurf machen, ohne einen Zoo zu bauen. Umsetzungshilfe: Steckbrief im Buch (siehe oben).
