@@ -23,7 +23,7 @@ Dev-Server: [http://localhost:5173/cursor/](http://localhost:5173/cursor/)
 
 Gewählter Weg: VitePress lebt in diesem Ordner (`.vitepress/`). Der Build (`/.vitepress/dist`) wird als **Pages-Root** des Repos `rmdroid/cursor` veröffentlicht. Deshalb ist `base` **`/cursor/`**, nicht der verschachtelte Pfad `/cursor/buch/skills-die-geld-verdienen/`.
 
-Workflow: `.github/workflows/deploy-docs.yml` (build + `actions/deploy-pages`).
+Workflow: `.github/workflows/deploy-docs.yml` — auf PRs nur Build, Deploy nur von `main` bzw. manuell.
 
 ### Der eine Settings-Klick
 
