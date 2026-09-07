@@ -16,6 +16,10 @@ Technik: Python/matplotlib. Keine erfundenen Zahlen/ROI, keine Drittlogos.
 
 | `08-skill-steckbrief-template.png` | Kap. 8 | Skill-Steckbrief-Template (11 Felder, keine Rohdatei) |
 
+| `09-qualitaetsloop.png` | Kap. 9 | Qualitätsloop Entwurf→Prüfung→Freigabe→Lernen (+ Eskalation/Pause) |
+
+| `10-steuerungs-cockpit.png` | Kap. 10 | Steuerungs-Cockpit (6 Felder, keine Demo-Zahlen) |
+
 ## Hinweise
 
 - Zielbreite ca. 1600–2000 px (A5-tauglich).
