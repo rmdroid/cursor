@@ -1,7 +1,7 @@
 ---
 title: "Betrieb: Routinen, Qualität, Eskalation"
 chapter: 9
-status: entwurf
+status: lektorat-auflagen
 author: Mara
 date: 2026-09-07
 book: Skills, die Geld verdienen
@@ -21,22 +21,20 @@ Die Reihenfolge bleibt die aus Kapitel 7 und 8: Pipeline füllen → kleinste In
 
 Eine Routine ist sinnvoll, wenn vier Bedingungen zusammenkommen. Der Ablauf ist **wiederkehrend**. Wochenschluss-Status, Kickoff-Nacharbeit, Angebotsrohbau nach Termin, nicht Einzelfallkunst. Der **manuelle** Durchlauf mit Steckbrief hat mehrmals funktioniert: Inputs kamen, Output traf Pflichtfelder, Review blieb tragbar. Owner und Freigabegrenze sind **namentlich** und halten unter Vertretung oder Pause. Und ein **Stop-Kriterium** steht vor dem Start: Was setzt uns zurück auf manuell oder auf den Pilot-Modus?
 
-Eine Routine ist *nicht* sinnvoll, wenn der Prozess noch driftet, die Vorlage fehlt, der Owner wechselt heimlich oder „Versand mitdenken“ noch im Skill steckt. Dann ist Vereinfachen oder Nachschärfen die Intervention nicht der Kalender-Trigger. Kapitel 14 baut denselben Gedanken in den 90-Tage-Rahmen: Tage 31–60 härten Qualität; Routine erst, wenn reif.
+Eine Routine ist *nicht* sinnvoll, wenn der Prozess noch driftet, die Vorlage fehlt, der Owner wechselt heimlich oder „Versand mitdenken“ noch im Skill steckt. Dann ist Vereinfachen oder Nachschärfen die Intervention, nicht der Kalender-Trigger. Kapitel 14 baut denselben Gedanken in den 90-Tage-Rahmen: Tage 31–60 härten Qualität. Routine erst, wenn reif.
 
 Zwei Buch-Muster eignen sich früh für Routinen, weil Stoff und Freigabe greifbar sind:
 
-- **status-mandat-kurz**, strukturierter Statusentwurf; Versand erst nach Freigabe 
- https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/status-mandat-kurz/SKILL.md
-- **protokoll-entscheidungen**. Meeting-Nacharbeit mit sichtbaren Beschlüssen und offenen Punkten 
- https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/protokoll-entscheidungen/SKILL.md
+- **status-mandat-kurz**: strukturierter Statusentwurf; Versand erst nach Freigabe
+- **protokoll-entscheidungen**: Meeting-Nacharbeit mit sichtbaren Beschlüssen und offenen Punkten
 
-Basis der Bibliothek: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills. **angebot-aus-kickoff** folgt oft danach wenn Vorlage und kommerzielle Grenze sitzen. Alle drei am selben Montag „routinisieren“ erzeugt denselben Zoo wie drei Abteilungsbots, nur mit Trigger.
+Basis: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills. **angebot-aus-kickoff** folgt oft danach, wenn Vorlage und kommerzielle Grenze sitzen. Alle drei am selben Montag „routinisieren“ erzeugt denselben Zoo wie drei Abteilungsbots, nur mit Trigger.
 
 Solo-Regel light: Eine Woche manuell mit Checkliste. Zweite Woche derselbe Skill am festen Slot, Freigabe zeitlich vom Entwurf getrennt. Erst wenn Review nicht länger dauert als der alte Tipparbeit-Pfad *und* Inputs besser oder zumindest stabil sind, bleibt die Routine. Sonst zurück ohne Gesichtsverlust. Stopp ist Betriebshygiene, nicht Scheitern.
 
 Mittelstand denselben Test, nur mit benannter Vertretung: Wenn der Owner im Urlaub ist und die Routine nur noch „irgendwie weiterläuft“, war sie nie betriebsreif, sie war an eine Person gekoppelt, nicht an Outcome und Freigabegrenze. Bewährung heißt auch: Der Ablauf übersteht Abwesenheit, ohne dass Chat-Verläufe zur heimlichen Zweit-Wahrheit werden.
 
-Was die Routine *nicht* ersetzt: Urteilskraft an Entscheidungspunkten. Preis, Scope, verbindliche Zusagen, kundenreifer Versand bleiben Mensch, auch wenn der Trigger jeden Freitag tickt. Die Routine holt Stoff und Form in den Loop; sie darf keine Freigabe vortäuschen, nur weil der Kalender grün ist.
+Was die Routine *nicht* ersetzt: Urteilskraft an Entscheidungspunkten. Preis, Scope, verbindliche Zusagen, kundenreifer Versand bleiben Mensch, auch wenn der Trigger jeden Freitag tickt. Die Routine holt Stoff und Form in den Loop. Sie darf keine Freigabe vortäuschen, nur weil der Kalender grün ist.
 
 ## Fehlermodus: stale Daten, Doppelarbeit, fehlende Freigabe
 
@@ -46,7 +44,7 @@ Betrieb ohne benannte Fehlermodi endet in stiller Drift. Drei Muster tauchen im 
 
 **Doppelarbeit.** Zwei Varianten desselben Skills, Chat-Prompt und Bibliotheksdatei, zwei Owner-Wahrheiten, Status im Thread und in der Ablage. Die Routine multipliziert den Murks, statt ihn zu ersetzen. Gegenmittel: eine aktuelle Version je Skill, ein Artefaktort, Handoff mit Status (Kapitel 5). Inventur vor dem nächsten Trigger: Was ist aktiv, was ist Schatten? Doppelarbeit ist oft kein Fleiß, sie ist fehlende Ablage-Ownership.
 
-**Fehlende Freigabe.** Der Rohbau wirkt so fertig, dass jemand ihn für freigegeben hält oder die Routine „spart“ den Prüfschritt, weil es eilig ist. Genau hier entstehen Außenrisiko und Mandatsbruch. Gegenmittel: Freigabe als Stufe und Zeitpunkt, nicht als Höflichkeitsstempel; Entwurf und kundenreife Freigabe zeitlich trennen, auch wenn dieselbe Person beide Hüte trägt. Ein Agent oder eine Routine, die Status oder Protokoll ohne Freigabe versendet, verletzt die Grenze aus Kapitel 5 und 8. Das ist Stopp-Kriterium, kein Feature-Wunsch für „nächste Version“.
+**Fehlende Freigabe.** Der Rohbau wirkt so fertig, dass jemand ihn für freigegeben hält oder die Routine „spart“ den Prüfschritt, weil es eilig ist. Genau hier entstehen Außenrisiko und Mandatsbruch. Gegenmittel: Freigabe als Stufe und Zeitpunkt, nicht als Höflichkeitsstempel. Entwurf und kundenreife Freigabe zeitlich trennen, auch wenn dieselbe Person beide Hüte trägt. Ein Agent oder eine Routine, die Status oder Protokoll ohne Freigabe versendet, verletzt die Grenze aus Kapitel 5 und 8. Das ist Stopp-Kriterium, kein Feature-Wunsch für „nächste Version“.
 
 Die drei Fehlermodi verstärken sich gegenseitig. Stale Daten plus fehlende Freigabe erzeugen kundenreife Texte auf gestrigem Stand. Doppelarbeit plus fehlende Freigabe erzeugen zwei „gültige“ Versionen, von denen eine schon draußen ist. Deshalb Review nicht als Einzelcheck „klingt gut“, sondern als kurzer Fehlermodus-Blick: Frisch? Eine Wahrheit? Freigegeben, ja oder nein?
 
@@ -54,11 +52,11 @@ Für **protokoll-entscheidungen** heißt stale oft: Beschlüsse ohne die Korrekt
 
 Weitere Betriebszeichen in einem Atemzug: Qualität kippt trotz Nachschärfung → Pause und Owner-Review. Review dauert dauerhaft länger als der frühere manuelle Schritt, ohne bessere Inputs → Intervention zurücksetzen. Zugänge oder Schreibrechte weiten sich still → IT-Inventur, Least Privilege. Owner fehlt oder wechselt heimlich → kein Go für Fläche. Kapitel 10 misst Eskalationen und Review-Last; hier reicht die Betriebsregel: **Fehlermodi benennen, bevor die Routine live geht, sonst eskaliert Hoffnung.**
 
-Eskalation ist der vorgesehene Ausgang, nicht der Ausnahmezustand. Skill oder Routine markieren Lücke, Widerspruch, Rechts-/Geldnähe oder Anhang-Nähe → Owner entscheidet: nachschärfen, manuell, Pause, Freigabe durch Führung. IT stellt die technische Stopp-Möglichkeit; Fachseite und GF tragen die inhaltliche. Wer Eskalation als „Störung des Automaten“ behandelt, baut Blindflug.
+Eskalation ist der vorgesehene Ausgang, nicht der Ausnahmezustand. Skill oder Routine markieren Lücke, Widerspruch, Rechts-/Geldnähe oder Anhang-Nähe → Owner entscheidet: nachschärfen, manuell, Pause, Freigabe durch Führung. IT stellt die technische Stopp-Möglichkeit. Fachseite und GF tragen die inhaltliche. Wer Eskalation als „Störung des Automaten“ behandelt, baut Blindflug.
 
 ## Qualitätsloop: Entwurf → Prüfung → Freigabe → Lernen
 
-Qualität im Betrieb ist keine einmalige Abnahme vor dem Go-Live. Sie ist ein **Loop**, der jede Instanz und den Baustein selbst verbessert ohne Konzern-QM-Theater.
+Qualität im Betrieb ist keine einmalige Abnahme vor dem Go-Live. Sie ist ein **Loop**, der jede Instanz und den Skill selbst verbessert, ohne Konzern-QM-Theater.
 
 **Entwurf.** Skill oder Mensch erzeugt den Rohbau in den Grenzen des Steckbriefs: Pflichtfelder, markierte Annahmen, sichtbare Lücken. Kein Versand, kein Preis „geschätzt“, keine stillen Beschlüsse. Der Entwurf ist abnehmbar oder er ist noch Stoff. Für Protokoll und Status gilt dieselbe Disziplin: beschlossen vs. offen, intern vs. kundenfähig getrennt.
 
@@ -78,49 +76,46 @@ Praktisch reicht ein schmales Betriebsblatt je Outcome: Trigger und Skill-Versio
 
 Abschalten ist kein IT-Ticket und kein Eingeständnis. Es ist **Führungs- und Fachentscheidung**: Dieser Outcome, diese Routine, dieser Skill oder Agent erfüllt den Zweck nicht mehr oder das Risiko übersteigt den Nutzen. IT stellt die technische Möglichkeit bereit (Zugänge, Trigger, Orchestrierung stoppen). Owner und GF entscheiden, *dass* gestoppt wird. Wer Qualität nicht stoppen darf, ist kein Owner. Kapitel 5 hat das gesetzt; im Betrieb wird es ernst.
 
-Aufräumen gehört dazu. Pausierte und abgelegte Bausteine brauchen einen sichtbaren Status: aktiv / pausiert / abgelegt. Sonst bleiben tote Trigger, rostende Dateien und Schatten-Prompts „für alle Fälle“. Die Bibliothek unter https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills ist der technische Ort für die Buch-Muster; Ihr Portfolio ist die Führungsansicht: Welche Outcomes laufen? Welche ruhen? Welche fliegen raus?
+Aufräumen gehört dazu. Pausierte und abgelegte Skills brauchen einen sichtbaren Status: aktiv / pausiert / abgelegt. Sonst bleiben tote Trigger, rostende Dateien und Schatten-Prompts „für alle Fälle“. Die öffentliche Buch-Bibliothek (Basis oben) ist der technische Ort für die Buch-Muster; Ihr Portfolio ist die Führungsansicht: Welche Outcomes laufen? Welche ruhen? Welche fliegen raus?
 
 Wann abschalten oder pausieren ohne Drama: Stop-Kriterium greift. Owner fehlt nachhaltig. Freigabegrenze wird regelmäßig unterlaufen. Doppelvarianten lassen sich nicht auf eine Wahrheit bringen. Nutzen ist unklar und Kapitel 10 liefert keine tragfähige Spur, dann ist Pause ehrlicher als Hoffnung. Aufräumen heißt: Trigger aus, Version markieren, Chat-Varianten archivieren oder löschen, Vertretung informieren, was *nicht* mehr gilt.
 
-Pause und Ablage sind zwei Stufen. Pause: Der Outcome bleibt im Portfolio, der Trigger steht, Nacharbeit am Brief oder an den Inputs ist geplant. Ablage: Der Baustein ist nicht mehr Betriebsmittel; wer ihn trotzdem braucht, startet bewusst neu mit Pipeline und Bewährung, nicht mit dem rostenden Prompt. Wer alles nur „pausiert“, um niemanden zu verärgern, hat abgelegt ohne es zu sagen und die Schatten-Prompts blühen weiter.
+Pause und Ablage sind zwei Stufen. Pause: Der Outcome bleibt im Portfolio, der Trigger steht, Nacharbeit am Brief oder an den Inputs ist geplant. Ablage: Der Skill ist nicht mehr Betriebsmittel; wer ihn trotzdem braucht, startet bewusst neu mit Pipeline und Bewährung, nicht mit dem rostenden Prompt. Wer alles nur „pausiert“, um niemanden zu verärgern, hat abgelegt ohne es zu sagen und die Schatten-Prompts blühen weiter.
 
 Solo braucht denselben Mut in klein: Eine Routine, die Review frisst und Inputs nicht verbessert, fliegt aus dem Kalender. Ein Skill, den Sie seit Wochen nicht gegen die Checkliste gefahren haben, ist kein Betriebsmittel, er ist Ballast. Aufräumen ist hier Selbstführung; die Logik ist dieselbe wie im Mittelstand.
 
-Führung, die nur „mehr KI“ feiert und nie ablegt, züchtet den Friedhof. Führung, die Outcomes und Stopps reviewt, hält die Bibliothek mandatstauglich. Das Portfolio-Review aus Kapitel 5. Outcomes, Owner, pausiert/abgelegt, ist genau dieser Rhythmus. Kapitel 15 wird denselben Fehler („Live ohne Abschaltplan“) buchweit sammeln; hier ist die positive Formulierung: **Abschalten ist Teil des Betriebs, nicht sein Gegenteil.**
+Führung, die nur „mehr KI“ feiert und nie ablegt, züchtet den Friedhof. Führung, die Outcomes und Stopps reviewt, hält die Bibliothek mandatstauglich. Das Portfolio-Review aus Kapitel 5 (Outcomes, Owner, pausiert/abgelegt) ist genau dieser Rhythmus. Kapitel 15 wird denselben Fehler („Live ohne Abschaltplan“) buchweit sammeln; hier ist die positive Formulierung: **Abschalten ist Teil des Betriebs, nicht sein Gegenteil.**
 
-## Abbildung
+## Abbildung: Qualitätsloop
 
-*(Grafik folgt)*
+![Qualitätsloop: Entwurf, Prüfung, Freigabe, Lernen](../assets/grafiken/09-qualitaetsloop.png)
 
-Platzhalter für eine einfache Schleife: Entwurf → Prüfung → Freigabe → Lernen, mit seitlichem Ausgang „Eskalation / Pause“ und dem Hinweis: Routine erst nach manueller Bewährung; Abschalten ist Owner-/GF-Recht.
+*Abbildung: Qualitätsloop. Entwurf → Prüfung → Freigabe → Lernen, mit Ausgang Eskalation/Pause. Routine erst nach manueller Bewährung; Abschalten ist Owner-/GF-Recht. Keine Kennzahlen-Demo.*
 
 ## Betrieb ohne Zoo, die kurze Disziplin
 
 Drei Sätze halten den Alltag zusammen. Keine Routine vor Bewährung. Kein Trigger ohne benannten Fehlermodus und Freigabestufe. Kein aktiver Skill ohne Owner und Abschaltpfad. Wer diese Disziplin hält, braucht keinen Agenten-Zoo und keinen zweiten Fulltime-Job namens „Prompt-Pflege“. Wer sie bricht, merkt es zuerst an Review-Last und Eskalationen und später an Vertrauen, das still abwandert.
 
-Die Naht zu Kapitel 8 bleibt: Der Anforderungsbrief ist die gemeinsame Wahrheit; der Betrieb prüft sie jede Instanz. Drift zwischen Brief und gelebter Routine ist ein Pflegefall, zurückschreiben oder stoppen, nicht „im Chat schnell korrigieren und hoffen“.
+Die Naht zu Kapitel 8 bleibt: Der Anforderungsbrief ist die gemeinsame Wahrheit. Der Betrieb prüft sie jede Instanz. Drift zwischen Brief und gelebter Routine ist ein Pflegefall, zurückschreiben oder stoppen, nicht „im Chat schnell korrigieren und hoffen“.
 
 ## Lesepfad und Naht zu Messung
 
 GF liest Bewährungsregel vor Routine, Fehlermodus fehlende Freigabe, Abschalten als Führungsrecht. IT liest stale Daten und Doppelarbeit als Integrations- und Versionsproblem, Nachweis light, technische Stopp-Möglichkeit. Solo nimmt einen Muster-Skill, oft Status oder Protokoll, fährt den Qualitätsloop eine Woche bewusst und notiert ein Stop-Kriterium im Kalender.
 
-Als Nächstes: **Nutzen messen und steuern** (Kapitel 10). Zeit, Fehlerquote, Durchlauf, Eskalationen, Kostenarten ohne Fantasie-ROI. Wer betreibt, ohne zu messen, steuert nach Gefühl. Wer misst, ohne betreiben zu können, zählt Demo-Schulden. Der Betrieb dieses Kapitels liefert die Ereignisse; Kapitel 10 liefert die Steuergrößen.
+Als Nächstes: **Nutzen messen und steuern** (Kapitel 10). Zeit, Fehlerquote, Durchlauf, Eskalationen, Kostenarten ohne Fantasie-ROI. Wer betreibt, ohne zu messen, steuert nach Gefühl. Wer misst, ohne betreiben zu können, zählt Demo-Schulden. Der Betrieb dieses Kapitels liefert die Ereignisse. Kapitel 10 liefert die Steuergrößen.
 
 ---
 
 ### Was die Geschäftsführung entscheidet
 
-Dass Routinen erst nach manueller Bewährung und mit Stop-Kriterium starten; dass fehlende Freigabe und unterlaufene Grenzen Stopp bedeuten, nicht „später dokumentieren“; dass Abschalten und Aufräumen Führungsrechte sind und Portfolio-Reviews Outcomes (aktiv / pausiert / abgelegt) steuern; Owner-Pflicht je produktiver Routine; dass Lernen in Steckbrief und Bibliothek zurückschreibt nicht in Schatten-Prompts.
+Dass Routinen erst nach manueller Bewährung und mit Stop-Kriterium starten. Dass fehlende Freigabe und unterlaufene Grenzen Stopp bedeuten, nicht „später dokumentieren“. Dass Abschalten und Aufräumen Führungsrechte sind und Portfolio-Reviews Outcomes (aktiv / pausiert / abgelegt) steuern. Owner-Pflicht je produktiver Routine. Dass Lernen in Steckbrief und Bibliothek zurückschreibt, nicht in Schatten-Prompts.
 
 ### Was die IT-Leitung umsetzt
 
-Routinen technisch begrenzen: Trigger, Skill-Version, Identitäten, Logs, Abschaltbarkeit; stale Inputs und Doppelablagen sichtbar machen; Brief und Repo-Datei synchron halten (Basis: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills); Eskalations- und Pausenzustände betreibbar machen; Fachbereichen beim Qualitätsloop und Nachweis light helfen ohne Ownership an Tools zu übertragen.
+Routinen technisch begrenzen: Trigger, Skill-Version, Identitäten, Logs, Abschaltbarkeit. Stale Inputs und Doppelablagen sichtbar machen. Brief und Repo-Datei synchron halten (Buch-Bibliothek). Eskalations- und Pausenzustände betreibbar machen. Fachbereichen beim Qualitätsloop und Nachweis light helfen, ohne Ownership an Tools zu übertragen.
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt wählen (Status oder Protokoll). Datei danebenlegen:
+Einen wiederkehrenden Schritt wählen (Status oder Protokoll). Kurzlink danebenlegen: **status-mandat-kurz** oder **protokoll-entscheidungen** unter https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills.
 
-- https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/status-mandat-kurz/SKILL.md
-- https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/protokoll-entscheidungen/SKILL.md
-
-Eine Woche manuell mit Checkliste; zweite Woche fester Slot, Entwurf und Freigabe zeitlich trennen. Fehlermodi notieren: Was wäre stale, Doppel, fehlende Freigabe bei *Ihnen*? Stop-Kriterium in den Kalender. Was nicht trägt, aus dem Kalender nehmen, aufräumen zählt als Erfolg.
+Eine Woche manuell mit Checkliste. Zweite Woche fester Slot, Entwurf und Freigabe zeitlich trennen. Fehlermodi notieren: Was wäre stale, Doppel, fehlende Freigabe bei *Ihnen*? Stop-Kriterium in den Kalender. Was nicht trägt, aus dem Kalender nehmen. Aufräumen zählt als Erfolg.
