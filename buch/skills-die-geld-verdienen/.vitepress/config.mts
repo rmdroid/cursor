@@ -117,6 +117,21 @@ export default defineConfig({
   ignoreDeadLinks: 'localhostLinks',
   cleanUrls: true,
   lastUpdated: true,
+  vite: {
+    plugins: [
+      {
+        name: 'resolve-kapitel-book-assets',
+        resolveId(id, importer) {
+          if (!importer?.includes(`${bookRoot}/kapitel/`)) return
+          if (!id.includes('assets/grafiken/')) return
+          const relative = id.replace(/^\.\//, '')
+          if (relative.startsWith('assets/')) {
+            return join(bookRoot, relative)
+          }
+        },
+      },
+    ],
+  },
   themeConfig: {
     nav: [
       { text: 'Start', link: '/' },

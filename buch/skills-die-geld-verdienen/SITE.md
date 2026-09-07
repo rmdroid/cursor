@@ -38,4 +38,6 @@ Der Workflow versucht Pages beim Deploy auch selbst zu aktivieren (`enablement: 
 
 ## Was die Site nicht veröffentlicht
 
-`briefings/` ist Redaktionsmaterial und per `srcExclude` nicht Teil der öffentlichen Site.
+`briefings/` und `skills/` sind nicht Teil der öffentlichen Site (`srcExclude`).
+
+Grafiken in `kapitel/*.md` als `../assets/grafiken/….png` einbinden (relativ zur Kapiteldatei). `./assets/grafiken/…` wird von VitePress ebenfalls auf den Buchordner aufgelöst, damit der Build nicht kippt.
