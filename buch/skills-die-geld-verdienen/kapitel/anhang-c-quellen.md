@@ -1,5 +1,5 @@
 ---
-title: "Anhang C — Quellenverzeichnis"
+title: "Anhang C: Quellenverzeichnis"
 chapter: anhang-c
 status: entwurf
 author: Mara
@@ -7,7 +7,7 @@ date: 2026-09-07
 book: Skills, die Geld verdienen
 ---
 
-# Anhang C — Quellenverzeichnis
+# Anhang C. Quellenverzeichnis
 
 Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Kurzbelege** (z. B. `(KfW Fokus 554)`); Details, URLs und Status stehen hier.
 
@@ -24,7 +24,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 
 ## A. Arbeitsmarkt / Fachkräfte
 
-### A1 — IAB-Monitor Arbeitskräftebedarf 1/2026
+### A1. IAB-Monitor Arbeitskräftebedarf 1/2026
 
 | Feld | Inhalt |
 |------|--------|
@@ -35,7 +35,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(IAB-Monitor 1/2026)` |
 
-### A2 — IAB: Zentrale Befunde zu aktuellen Arbeitsmarkt-Themen 2025
+### A2. IAB: Zentrale Befunde zu aktuellen Arbeitsmarkt-Themen 2025
 
 | Feld | Inhalt |
 |------|--------|
@@ -46,7 +46,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(IAB Zentrale Befunde 2025)` |
 
-### A3 — IAB-Prognose 2025/2026 / Kurzbericht kb2025-19
+### A3. IAB-Prognose 2025/2026 / Kurzbericht kb2025-19
 
 | Feld | Inhalt |
 |------|--------|
@@ -59,7 +59,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Kurzbeleg** | `(IAB kb2025-19)` |
 | **Hinweis** | Spot-Check 2026-09-07 (Vera): Kurzfassung kb2025-19 sagt wörtlich „sinkt … um etwa 40.000 Personen“ (2026). Tabelle: Veränderung Erwerbspersonenpotenzial 2026 = **−35** (in 1.000) = −35.000. **Verifiziert:** „etwa 40.000“ als IAB-Kurztext ok; alternativ präzise „rund 35.000 (Tabellenwert)“ oder ohne Zahl „sinkt erstmals“. Keine Fachkräftelücken-Zahl daraus erfinden. |
 
-### A4 — IW / KOFA Fachkräftereport März 2026
+### A4. IW / KOFA Fachkräftereport März 2026
 
 | Feld | Inhalt |
 |------|--------|
@@ -70,7 +70,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(IW/KOFA März 2026)` |
 
-### A5 — IW Fachkräftelücke (Sekundärbericht ZEIT/dpa)
+### A5. IW Fachkräftelücke (Sekundärbericht ZEIT/dpa)
 
 | Feld | Inhalt |
 |------|--------|
@@ -78,10 +78,10 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Institution** | IW (Primär); Bericht ZEIT 2026-09-07 |
 | **URL** | https://www.zeit.de/politik/deutschland/2026-09/fachkraeftemangel-deutschland-iw-studie-arbeitsmarkt-verkauf-pflege |
 | **Status** | Annahme (Primär-PDF noch nicht geöffnet) |
-| **Kurzbeleg** | `(IW via ZEIT 2026 — Annahme)` |
+| **Kurzbeleg** | `(IW via ZEIT 2026. Annahme)` |
 | **Hinweis** | Nicht als harte Buchzahl verwenden, bis IW-Original vorliegt. |
 
-### A6 — BMAS Fachkräftestrategie der Bundesregierung
+### A6. BMAS Fachkräftestrategie der Bundesregierung
 
 | Feld | Inhalt |
 |------|--------|
@@ -92,7 +92,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(BMAS Fachkräftestrategie)` |
 
-### A7 — Destatis: Gemeldete Stellen
+### A7. Destatis: Gemeldete Stellen
 
 | Feld | Inhalt |
 |------|--------|
@@ -102,23 +102,23 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **URL** | https://www.destatis.de/DE/Themen/Wirtschaft/Konjunkturindikatoren/Arbeitsmarkt/karb830.html |
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(Destatis gemeldete Stellen)` |
-| **Hinweis** | Nur BA-gemeldete Stellen — nicht mit IAB-Stellenerhebung vermischen. |
+| **Hinweis** | Nur BA-gemeldete Stellen nicht mit IAB-Stellenerhebung vermischen. |
 
-### A8 — Prozesskosten / Euro-Kennzahlen (Kap. 1)
+### A8. Prozesskosten / Euro-Kennzahlen (Kap. 1)
 
 | Feld | Inhalt |
 |------|--------|
 | **Kurztitel** | Prozesskosten / Einstiegsbeispiele Kap. 1 |
-| **Institution** | — |
+| **Institution** |, |
 | **Status** | Unklar |
-| **Kurzbeleg** | `(Prozesskosten — Unklar)` |
+| **Kurzbeleg** | `(Prozesskosten. Unklar)` |
 | **Hinweis** | Keine belastbare Primärquelle in den Briefings; Musterkennzeichnung beibehalten, keine Euro-/Prozentzahlen erfinden. |
 
 ---
 
 ## B. KI-Adoption Mittelstand / Digitalisierung
 
-### B1 — Destatis IKT: KI-Nutzung 2025
+### B1. Destatis IKT: KI-Nutzung 2025
 
 | Feld | Inhalt |
 |------|--------|
@@ -130,7 +130,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Kurzbeleg** | `(Destatis IKT 2025)` |
 | **Tragfähig** | 26 % KI-Nutzung insgesamt; 10–49: 23 %, 50–249: 36 %, ≥250: 57 %. |
 
-### B2 — Destatis Presse: KI-Nutzung 2024
+### B2. Destatis Presse: KI-Nutzung 2024
 
 | Feld | Inhalt |
 |------|--------|
@@ -141,7 +141,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(Destatis PM 444/2024)` |
 
-### B3 — KfW Fokus 554 / Fokus 533 (KI im Mittelstand)
+### B3. KfW Fokus 554 / Fokus 533 (KI im Mittelstand)
 
 | Feld | Inhalt |
 |------|--------|
@@ -155,7 +155,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Kurzbeleg** | `(KfW Fokus 554)` |
 | **Tragfähig** | ~20 % der mittelständischen Unternehmen nutzen mind. eine KI-Technologie; NLG 14 %, Texterkennung 10 %; Treiber Digitalisierungsgrad/Know-how. |
 
-### B4 — Bitkom Research: Digitalisierung der Wirtschaft 2026
+### B4. Bitkom Research: Digitalisierung der Wirtschaft 2026
 
 | Feld | Inhalt |
 |------|--------|
@@ -165,9 +165,9 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **URL** | https://bitkom-research.de/news/digitalisierung-der-wirtschaft-fast-jedes-unternehmen-beschaeftigt-sich-mit-ki |
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(Bitkom 2026)` |
-| **Hinweis** | Andere Grundgesamtheit (ab 20 Beschäftigte) als Destatis/KfW — **nicht vermischen**. |
+| **Hinweis** | Andere Grundgesamtheit (ab 20 Beschäftigte) als Destatis/KfW, **nicht vermischen**. |
 
-### B5 — DMB / Salesforce „KI-Index Mittelstand 2026“
+### B5. DMB / Salesforce „KI-Index Mittelstand 2026“
 
 | Feld | Inhalt |
 |------|--------|
@@ -176,10 +176,10 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Datum** | Erhebung November 2025; Presse 2026 |
 | **URL** | https://www.mittelstandsbund.de/presse/beitrag/ki-index-mittelstand-2026-ki-nutzung-steigt-um-54-prozent-einsatz-von-ki-agenten-fast-verdoppelt |
 | **Status** | Annahme |
-| **Kurzbeleg** | `(DMB/Salesforce KI-Index 2026 — Annahme)` |
+| **Kurzbeleg** | `(DMB/Salesforce KI-Index 2026. Annahme)` |
 | **Hinweis** | Nur Nebenquelle; „KI-Agenten“-Definition unklar; nicht als amtliche Kennzahl. |
 
-### B6 — IfM Bonn: Mittelstandsdefinition
+### B6. IfM Bonn: Mittelstandsdefinition
 
 | Feld | Inhalt |
 |------|--------|
@@ -189,7 +189,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(IfM Bonn Mittelstandsdefinition)` |
 
-### B7 — EU-KMU-Definition (Empfehlung 2003/361/EG)
+### B7. EU-KMU-Definition (Empfehlung 2003/361/EG)
 
 | Feld | Inhalt |
 |------|--------|
@@ -200,7 +200,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(Empfehlung 2003/361/EG)` |
 
-### B8 — NIST AI Agent Standards Initiative
+### B8. NIST AI Agent Standards Initiative
 
 | Feld | Inhalt |
 |------|--------|
@@ -212,7 +212,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Kurzbeleg** | `(NIST AI Agent Initiative)` |
 | **Hinweis** | Institutionelle Rahmung („autonomous actions“), keine fertige ISO-Definition Chatbot≠Agent. |
 
-### B9 — NIST AI RMF Generative AI Profile (NIST AI 600-1)
+### B9. NIST AI RMF Generative AI Profile (NIST AI 600-1)
 
 | Feld | Inhalt |
 |------|--------|
@@ -223,20 +223,20 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(NIST AI 600-1)` |
 
-### B10 — Chatbot vs. Agent (enge Gegenüberstellung)
+### B10. Chatbot vs. Agent (enge Gegenüberstellung)
 
 | Feld | Inhalt |
 |------|--------|
 | **Kurztitel** | EU AI Act / Vendor-Blogs zu „agentic AI“ für Chatbot-vs.-Agent |
 | **Status** | Unklar |
-| **Kurzbeleg** | `(Chatbot/Agent — Unklar; Arbeitsdefinition Buch)` |
+| **Kurzbeleg** | `(Chatbot/Agent. Unklar; Arbeitsdefinition Buch)` |
 | **Hinweis** | AI Act regelt Risikoklassen, nicht die Marketing-Dichotomie; Buch: autorenseitige Arbeitsdefinition, gestützt auf NIST-Formulierung. |
 
 ---
 
 ## C. EU AI Act / Compliance
 
-### C1 — Verordnung (EU) 2024/1689 (KI-Verordnung / AI Act)
+### C1. Verordnung (EU) 2024/1689 (KI-Verordnung / AI Act)
 
 | Feld | Inhalt |
 |------|--------|
@@ -248,29 +248,29 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(VO (EU) 2024/1689)` |
 
-### C2 — Konsolidierte Fassung Stand 27.07.2026
+### C2. Konsolidierte Fassung Stand 27.07.2026
 
 | Feld | Inhalt |
 |------|--------|
-| **Kurztitel** | Konsolidierter Text VO 2024/1689 — CELEX 02024R1689-20260727 |
+| **Kurztitel** | Konsolidierter Text VO 2024/1689. CELEX 02024R1689-20260727 |
 | **Institution** | EUR-Lex / EU |
 | **Datum** | Konsolidierungsstand 27.07.2026 |
 | **URL** | https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02024R1689-20260727 |
 | **Status** | Verifiziert (Seite erreichbar); DE-Volltext-Body im Spot-Check teilweise unvollständig → vor Druck lokal öffnen |
 | **Kurzbeleg** | `(konsolidiert 27.07.2026)` |
 
-### C3 — Verordnung (EU) 2026/1744 (Digital Omnibus on AI)
+### C3. Verordnung (EU) 2026/1744 (Digital Omnibus on AI)
 
 | Feld | Inhalt |
 |------|--------|
-| **Kurztitel** | VO (EU) 2026/1744 — Digital Omnibus on AI |
+| **Kurztitel** | VO (EU) 2026/1744. Digital Omnibus on AI |
 | **Institution** | Europäisches Parlament und Rat |
 | **Datum** | Rechtsakt 08.07.2026; ABl. 24.07.2026; Inkrafttreten 27.07.2026 |
 | **URL** | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744 |
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(VO (EU) 2026/1744)` / kombiniert: `(VO (EU) 2024/1689; Omnibus 2026/1744)` |
 
-### C4 — EU-Kommission: AI Act Policy Page
+### C4. EU-Kommission: AI Act Policy Page
 
 | Feld | Inhalt |
 |------|--------|
@@ -282,7 +282,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Kurzbeleg** | `(EC AI Act Policy)` |
 | **Hinweis** | Quelle für Labels „limited“ / „minimal“ (Kommissionskommunikation, keine VO-Kapitel). |
 
-### C5 — AI Act Service Desk / Single Information Platform
+### C5. AI Act Service Desk / Single Information Platform
 
 | Feld | Inhalt |
 |------|--------|
@@ -293,7 +293,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(AI Act Service Desk)` |
 
-### C6 — Leitlinien Transparenzpflichten (Art. 50)
+### C6. Leitlinien Transparenzpflichten (Art. 50)
 
 | Feld | Inhalt |
 |------|--------|
@@ -304,7 +304,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(EC Guidelines Art. 50)` |
 
-### C7 — Leitlinien verbotene KI-Praktiken (Art. 5)
+### C7. Leitlinien verbotene KI-Praktiken (Art. 5)
 
 | Feld | Inhalt |
 |------|--------|
@@ -315,7 +315,7 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(EC Guidelines Art. 5)` |
 
-### C8 — Bitkom: Umsetzungsleitfaden zur KI-Verordnung (Version 2.0)
+### C8. Bitkom: Umsetzungsleitfaden zur KI-Verordnung (Version 2.0)
 
 | Feld | Inhalt |
 |------|--------|
@@ -326,11 +326,11 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert (Branchenleitfaden, kein Gesetz) |
 | **Kurzbeleg** | `(Bitkom Umsetzungsleitfaden 2.0)` |
 
-### C9 — Mittelstand-Digital: Handbuch KI-Verordnung für KMU
+### C9. Mittelstand-Digital: Handbuch KI-Verordnung für KMU
 
 | Feld | Inhalt |
 |------|--------|
-| **Kurztitel** | KI-Verordnung — Praxisbeispiele zur Orientierung für KMU |
+| **Kurztitel** | KI-Verordnung. Praxisbeispiele zur Orientierung für KMU |
 | **Institution** | Mittelstand-Digital Zentren (BMWE-Netzwerk) |
 | **Datum** | Oktober 2025 (Portal) |
 | **URL Portal** | https://www.mittelstand-digital.de/MD/Redaktion/DE/Publikationen/ki-verordnung-mdz-kaiserslautern.html |
@@ -338,22 +338,22 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | **Status** | Verifiziert (Sekundär) |
 | **Kurzbeleg** | `(Mittelstand-Digital KI-VO Handbuch)` |
 
-### C10 — BNetzA: Factsheet KMU / Start-ups zur KI-Verordnung
+### C10. BNetzA: Factsheet KMU / Start-ups zur KI-Verordnung
 
 | Feld | Inhalt |
 |------|--------|
-| **Kurztitel** | KI-Verordnung — Fokus: KMU sowie Start-ups (Factsheet) |
+| **Kurztitel** | KI-Verordnung. Fokus: KMU sowie Start-ups (Factsheet) |
 | **Institution** | Bundesnetzagentur (BNetzA), KI-Service Desk |
 | **Datum** | Stand November 2025 |
 | **URL** | https://bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/_functions/factsheet_KMU.pdf?__blob=publicationFile&v=1 |
 | **Status** | Verifiziert |
 | **Kurzbeleg** | `(BNetzA Factsheet KMU)` |
 
-### C11 — BSI QUAIDAL
+### C11. BSI QUAIDAL
 
 | Feld | Inhalt |
 |------|--------|
-| **Kurztitel** | QUAIDAL — Qualitycriteria for AI Trainingsdata in AI Lifecycle |
+| **Kurztitel** | QUAIDAL. Qualitycriteria for AI Trainingsdata in AI Lifecycle |
 | **Institution** | Bundesamt für Sicherheit in der Informationstechnik (BSI) |
 | **Datum** | Presse 01.07.2025 |
 | **URL** | https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2025/250701_QUAIDAL.html |
@@ -368,11 +368,11 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 |-----------------|----------|
 | Fristen Omnibus (02.12.2026 / 02.12.2027 / 02.08.2028 u. a.) | Verifiziert am Primärtext VO 2026/1744 |
 | Art. 5, 6, 9–14, 50, 62, 113 | inhaltlich stimmig |
-| Art. 4 | Omnibus ersetzt Art. 4 — „unterstützen/fördern“, kein Garantieren eines Niveaus |
+| Art. 4 | Omnibus ersetzt Art. 4, „unterstützen/fördern“, kein Garantieren eines Niveaus |
 | Art. 11 KMU-Formular | Unklar vor Druck (ob final veröffentlicht) |
 | DE-Konsolidierung Volltext | vor Druck lokal gegenlesen |
 
-**Kein Rechtsersatz** — Spot-Check ≠ anwaltliche Freigabe.
+**Kein Rechtsersatz**. Spot-Check ≠ anwaltliche Freigabe.
 
 ---
 
@@ -384,8 +384,8 @@ Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Ku
 | Adecco-/Karriere-Blogs zu Engpassberufen | Sekundär; BA-Engpassanalyse primär nutzen |
 | skill-sprinters / aithoria / Cancom-ServiceNow-Presse | Marketing oder kleine n |
 | DMB/Salesforce „KI-Agenten verdoppelt“ | Annahme; Agent-Definition unklar |
-| BA-Fachkräfteengpassanalyse | in Briefings nicht voll verifiziert — bei Erstzitat Annahme bis BA-PDF direkt zitiert |
+| BA-Fachkräfteengpassanalyse | in Briefings nicht voll verifiziert, bei Erstzitat Annahme bis BA-PDF direkt zitiert |
 
 ---
 
-*Ende Anhang C — Stand 2026-09-07 (Mara, nach Vera-Briefings).*
+*Ende Anhang C. Stand 2026-09-07 (Mara, nach Vera-Briefings).*

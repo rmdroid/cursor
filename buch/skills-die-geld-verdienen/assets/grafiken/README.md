@@ -14,6 +14,8 @@ Technik: Python/matplotlib. Keine erfundenen Zahlen/ROI, keine Drittlogos.
 
 | `07-pipeline-end-to-end.png` | Kap. 7 | Pipeline End-to-End: Trigger → … → Nachweis |
 
+| `08-skill-steckbrief-template.png` | Kap. 8 | Skill-Steckbrief-Template (11 Felder, keine Rohdatei) |
+
 ## Hinweise
 
 - Zielbreite ca. 1600–2000 px (A5-tauglich).
