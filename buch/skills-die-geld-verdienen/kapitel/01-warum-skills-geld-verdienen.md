@@ -19,9 +19,7 @@ Geschäftsführung und IT-Leitung kennen die Symptome: wiederkehrende Arbeit, di
 
 Drei Kräfte treiben das — belegt mit Kurzbelegen (Details: Anhang C), sonst als Muster.
 
-**Fachliche Engpässe.** Wenige Köpfe tragen viele wiederkehrende Schritte. Bleiben diese Schritte unklar, hängt Qualität an Tagesform und Erinnerung. Das IAB beschreibt für 2025/2026 einen Arbeitsmarkt, der durch den demografischen Wandel gebremst wird: Das Erwerbspersonenpotenzial sinkt 2026 erstmals; Fachkräftesicherung rückt damit weiter nach vorn. (IAB kb2025-19)
-
-<!-- LEKTOR: Vera — frühere Formulierung „um ca. 40.000“ in Paste/Briefing nicht als tragfähige Zahl belegt. Erst nach Primärcheck aus kb2025-19/Presse wieder einsetzen oder dauerhaft streichen. -->
+**Fachliche Engpässe.** Wenige Köpfe tragen viele wiederkehrende Schritte. Bleiben diese Schritte unklar, hängt Qualität an Tagesform und Erinnerung. Das IAB beschreibt für 2025/2026 einen Arbeitsmarkt, der durch den demografischen Wandel gebremst wird: Das Erwerbspersonenpotenzial sinkt 2026 erstmals um etwa 40.000 Personen (IAB kb2025-19, Kurztext; Tabellenwert rund 35.000 — vgl. Anhang C). Fachkräftesicherung rückt damit weiter nach vorn.
 
 **Prozesskosten im Alltag.** Nicht die große Transformation frisst Marge, sondern das ständige Neuaufsetzen: gleicher Auftragstyp, neuer Prompt-Chaos-Thread, andere Ablage, andere Qualitätslücke. Für Euro- oder Prozentangaben zu Prozesskosten fehlt bisher eine belastbare Primärquelle — deshalb hier **Muster**, keine Behauptungszahl. (Prozesskosten — Unklar; siehe Anhang C)
 
@@ -61,7 +59,7 @@ Ein Skill ist die kleinste sinnvolle Einheit, die Sie bauen, testen und übergeb
 
 > Ein Skill verdient Geld, wenn er einen wiederkehrenden Schritt so festmacht, dass Zeit, Fehler und Übergabeaufwand sinken — ohne dass Strategie, Geld, Recht oder finale Freigabe an die Maschine abgegeben werden.
 
-Rohcode und Dateiformate gehören nicht ins Buch. Wer implementieren will, findet die kanonischen Vorlagen im **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)**. <!-- LEKTOR @Klaus: kanonische öffentliche URL nachziehen, sobald Companion freigegeben. --> Mit dieser Landkarte wird die nächste Frage greifbar: Welcher Workflow verdient überhaupt eine solche Fähigkeit?
+Rohcode und Dateiformate gehören nicht ins Buch. Wer implementieren will, findet die kanonischen Vorlagen im **Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`**. <!-- LEKTOR @Klaus: kanonische öffentliche URL nachziehen, sobald Companion freigegeben. --> Mit dieser Landkarte wird die nächste Frage greifbar: Welcher Workflow verdient überhaupt eine solche Fähigkeit?
 
 ## Welche Workflows ein Skill verdienen
 
@@ -170,4 +168,4 @@ Zugänge, Logging und Datengrenzen für erste Skills/Agenten; erlaubten Pfad sta
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) aufschreiben: Inputs, Output, Prüfpunkte — und daraus den ersten Skill-Entwurf machen, ohne einen Zoo zu bauen. Umsetzungshilfe: Steckbrief im Buch (siehe oben).
+Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) aufschreiben: Inputs, Output, Prüfpunkte — und daraus den ersten Skill-Entwurf machen, ohne einen Zoo zu bauen. Umsetzungshilfe: Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) (siehe oben).

@@ -140,7 +140,7 @@ Dieser Zyklus ist das Betriebsbild hinter dem Cover-Versprechen „bauen, testen
 
 ## Anti-Patterns, die Skill-Denken zerstören
 
-Die Fallen sind bekannt; die Gegenmittel passen in einen Atemzug. Prompt-Kopien statt Baustein heilen Sie mit einem Namen, einem Steckbrief, einer aktuellen Version. Den Skill-Friedhof mit Inventur, Owner und Ablage-Pflicht. Versteckte Rechte („darf mal eben alles lesen“) mit Verboten und Datenminimierung im Steckbrief plus IT-Freigabe. Den Alleskönner-Skill mit einem Outcome und Orchestrierung separat. Live ohne Freigabe mit der Stufe intern → kundenreif und Mensch für Geld, Recht, Außenwirkung. Und Code im Buch, Schatten-Kopien oder Privat-Repos mit Steckbrief im Buch — optional später öffentlicher Companion nach Freigabe; keine Rohdatei-Pflege in Chat und Folien; keine privaten Autor-Repos verlinken.
+Die Fallen sind bekannt; die Gegenmittel passen in einen Atemzug. Prompt-Kopien statt Baustein heilen Sie mit einem Namen, einem Steckbrief, einer aktuellen Version. Den Skill-Friedhof mit Inventur, Owner und Ablage-Pflicht. Versteckte Rechte („darf mal eben alles lesen“) mit Verboten und Datenminimierung im Steckbrief plus IT-Freigabe. Den Alleskönner-Skill mit einem Outcome und Orchestrierung separat. Live ohne Freigabe mit der Stufe intern → kundenreif und Mensch für Geld, Recht, Außenwirkung. Und Code im Buch, Schatten-Kopien oder Privat-Repos mit Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) — optional später öffentlicher Companion nach Freigabe; keine Rohdatei-Pflege in Chat und Folien; keine privaten Autor-Repos verlinken.
 
 Kapitel 8 vertieft Bau und Qualitätskriterien; Kapitel 15 sammelt Fehler und Gegenmittel buchweit.
 
@@ -168,7 +168,7 @@ Kreis oder horizontale Kette mit fünf Stationen:
 
 **Seitlicher Kasten:** „Skill = ein Outcome · klare Inputs/Outputs · prüfbar · übergebbar“
 
-**Fußnote:** „Beispiel-Skills als Steckbrief im Buch — kein Rohcode, kein Privat-Repo. Finale Freigabe, Geld, Recht, Strategie, Personal: Mensch.“
+**Fußnote:** „Beispiel-Skills als Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) — kein Rohcode, kein Privat-Repo. Finale Freigabe, Geld, Recht, Strategie, Personal: Mensch.“
 
 **Nicht zeigen:** SKILL.md-Inhalt, YAML, Produktlogos als Empfehlung, ROI-Zahlen, erfundene Kennzahlen.
 
@@ -180,8 +180,8 @@ Welche Outcomes überhaupt einen Skill verdienen; dass Bausteine vor neuen Agent
 
 ### Was die IT-Leitung umsetzt
 
-Skill-Bibliothek als Betriebsobjekt: Ort, Versionierung, Zugänge, Logs, Abschaltbarkeit; Steckbriefe an technische Umsetzung im **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)** koppeln; Alleskönner- und Schatten-Skills inventarisieren; Fachbereichen beim Schnitt „ein Outcome“ helfen.
+Skill-Bibliothek als Betriebsobjekt: Ort, Versionierung, Zugänge, Logs, Abschaltbarkeit; Steckbriefe an technische Umsetzung im **Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`** koppeln; Alleskönner- und Schatten-Skills inventarisieren; Fachbereichen beim Schnitt „ein Outcome“ helfen.
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) als Steckbrief skizzieren: Outcome, Inputs, Outputs, Checkliste, Verbote. Einmal mit echten Notizen testen und Review-Aufwand notieren. Noch keinen neuen Agenten bauen. Pflege-Slot im Kalender. Bau und Vorlagen später über Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode).
+Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) als Steckbrief skizzieren: Outcome, Inputs, Outputs, Checkliste, Verbote. Einmal mit echten Notizen testen und Review-Aufwand notieren. Noch keinen neuen Agenten bauen. Pflege-Slot im Kalender. Bau und Vorlagen später über Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`.
