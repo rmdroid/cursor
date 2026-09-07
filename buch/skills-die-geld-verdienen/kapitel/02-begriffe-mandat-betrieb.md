@@ -162,7 +162,7 @@ Menschliche Aufsicht und Transparenzpflichten werden im AI Act risikobasiert aus
 
 ## Abbildung
 
-![Begriffspyramide und Verantwortungsgrenze Mensch/KI](./assets/grafiken/02-begriffspyramide-mensch-ki.png)
+![Begriffspyramide und Verantwortungsgrenze Mensch/KI](../assets/grafiken/02-begriffspyramide-mensch-ki.png)
 
 *Abbildung 2: Begriffspyramide und Verantwortungsgrenze Mensch/KI. Skills als prüfbare Bausteine unter Assistent und Agent.*
 

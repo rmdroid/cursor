@@ -25,3 +25,4 @@ Technik: Python/matplotlib. Keine erfundenen Zahlen/ROI, keine Drittlogos.
 - Zielbreite ca. 1600–2000 px (A5-tauglich).
 - Farben: Anthrazit-Text auf hellem Grund, Akzent Blau.
 - Regenerieren: `python3 scripts/generate_buch_grafiken.py`
+- In `kapitel/*.md`: `../assets/grafiken/<dateiname>.png` (nicht `./assets/…`).

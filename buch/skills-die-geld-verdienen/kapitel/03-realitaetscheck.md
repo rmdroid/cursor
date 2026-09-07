@@ -123,7 +123,7 @@ Der nächste Schritt in Teil II ist Skill-Denken (Kapitel 4): Fähigkeiten statt
 
 ## Abbildung
 
-![Entscheidungsbaum: manuell lassen, vereinfachen, skillen oder schmalen Agenten bauen](./assets/grafiken/03-entscheidungsbaum-bauen-skillen-manuell.png)
+![Entscheidungsbaum: manuell lassen, vereinfachen, skillen oder schmalen Agenten bauen](../assets/grafiken/03-entscheidungsbaum-bauen-skillen-manuell.png)
 
 *Abbildung 3: Entscheidungsbaum: manuell lassen, vereinfachen, skillen oder schmalen Agenten bauen, kleinste ausreichende Intervention.*
 

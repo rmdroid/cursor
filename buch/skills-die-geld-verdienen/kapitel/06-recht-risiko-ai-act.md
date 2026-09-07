@@ -119,7 +119,7 @@ Keine abschließende Einstufung Ihres konkreten Systems. Kein nationales Durchf�
 
 ## Abbildung
 
-![Risikostufen und Mindestmaßnahmen nach EU-KI-VO](./assets/grafiken/06-risikostufen-mindestmassnahmen.png)
+![Risikostufen und Mindestmaßnahmen nach EU-KI-VO](../assets/grafiken/06-risikostufen-mindestmassnahmen.png)
 
 *Abbildung 6: Risikostufen und Mindestmaßnahmen nach EU-KI-VO. Orientierung, kein Rechtsersatz.*
 

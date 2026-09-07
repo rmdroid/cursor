@@ -141,7 +141,7 @@ Gemeinsamer Nenner: Skills sind der Hebel. Chat bleibt Werkzeug. Agenten sind Or
 
 ## Abbildung
 
-![Landkarte: Chat → Assistent → Agent → Skill-Bibliothek. Finale Freigabe bei Strategie, Geld, Recht und Personal bleibt beim Menschen.](./assets/grafiken/01-landkarte-chat-skill.png)
+![Landkarte: Chat → Assistent → Agent → Skill-Bibliothek. Finale Freigabe bei Strategie, Geld, Recht und Personal bleibt beim Menschen.](../assets/grafiken/01-landkarte-chat-skill.png)
 
 *Abbildung 1: Landkarte: Chat → Assistent → Agent → Skill-Bibliothek. Finale Freigabe bei Strategie, Geld, Recht und Personal bleibt beim Menschen.*
 
