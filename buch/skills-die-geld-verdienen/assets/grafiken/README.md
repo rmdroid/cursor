@@ -12,6 +12,8 @@ Technik: Python/matplotlib. Keine erfundenen Zahlen/ROI, keine Drittlogos.
 | `05-raci-light-agenten.png` | Kap. 5 | RACI-light für Agenten-Vorhaben |
 | `06-risikostufen-mindestmassnahmen.png` | Kap. 6 | Risikostufen → Mindestmaßnahmen (EU-KI-VO) |
 
+| `07-pipeline-end-to-end.png` | Kap. 7 | Pipeline End-to-End: Trigger → … → Nachweis |
+
 ## Hinweise
 
 - Zielbreite ca. 1600–2000 px (A5-tauglich).
