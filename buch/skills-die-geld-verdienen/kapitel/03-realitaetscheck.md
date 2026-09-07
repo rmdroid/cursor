@@ -81,7 +81,7 @@ Chat ist richtig, wenn Sie etwas Neues klären, einen Entwurf anstoßen oder ein
 
 Der praktische Test: Können Sie den Schritt in einem Satz ohne „irgendwie“ beschreiben und einer Vertretung übergeben? Wenn nein → noch Chat/Werkbank oder zuerst dokumentieren. Wenn ja → Skill prüfen. Wenn mehrere Skills orchestriert werden müssen → Agent prüfen. Eine ehrliche Zwischenform gibt es oft: Chat mit fester Checkliste daneben. Das ist noch kein Skill, aber besser als reines Improvisieren. Sobald dieselbe Checkliste und dieselbe Struktur mehrfach tragen, ist der Weg zum Skill kurz — und der Weg zum Agenten weiterhin optional.
 
-Rohumsetzung und Vorlagen gehören nicht in dieses Kapitel. Wer bauen will: Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) (Kap. 1–2; kein Privat-Repo, kein Rohcode).
+Rohumsetzung und Vorlagen gehören nicht in dieses Kapitel. Wer bauen will: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (Kap. 1–2; kein Privat-Repo, kein Dump im Buch).
 
 ## Entscheidungsbaum: bauen / skillen / manuell lassen
 
@@ -151,4 +151,4 @@ Checkliste und Entscheidungsbaum in den erlaubten Pfad übersetzen: Zugänge, Lo
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt durch die Stufen jagen: manuell lassen / vereinfachen / skillen / (nur falls nötig) schmalen Agenten. Inventur vorhandener Prompts und Tools; auf 1–3 Foki kürzen. Umsetzung später über den Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/).
+Einen wiederkehrenden Schritt durch die Stufen jagen: manuell lassen / vereinfachen / skillen / (nur falls nötig) schmalen Agenten. Inventur vorhandener Prompts und Tools; auf 1–3 Foki kürzen. Umsetzung später über https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills.

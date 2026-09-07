@@ -49,7 +49,7 @@ Ein Outcome ist ein Ergebnis, das Sie in einem Satz abnehmen können: „Protoko
 
 Zur Grenze gehören Outcome, Inputs, Outputs, Qualitätskriterien, Verbote sowie Owner und Freigabe. Der Outcome in einem Satz: Was ist fertig, wenn der Skill gelaufen ist? Die Inputs: Was muss vorliegen, in welcher Form — und was passiert, wenn etwas fehlt (Stopp, Nachfrage, Platzhalter)? Die Outputs: Was entsteht wo — Entwurf, Liste, strukturierte Felder — und was entsteht bewusst *nicht* (keine Unterschrift, kein Versand, keine Buchung)? Die Qualitätskriterien sind die Checkliste oder Pflichtfelder, an denen ein Mensch abnimmt. Die Verbote nennen Daten, die der Skill nicht lesen darf, Aktionen, die er nicht auslösen darf, Zusagen, die er nicht formulieren darf. Und Owner plus Freigabe klären, wer abnimmt und ab welcher Stufe etwas nach außen oder in kritische Systeme darf.
 
-Steckbrief-Denke reicht auf der Fachseite für den Start. Technische Begleitvorlagen — falls später ein **öffentlicher Companion** freigegeben wird — gehören dorthin, nicht als SKILL.md-Rohcode oder YAML-Dump in dieses Buch und **nicht** in private Repos der Autorenseite. So bleibt das Kapitel für GF lesbar und für IT anschlussfähig.
+Steckbrief-Denke reicht auf der Fachseite für den Start. Die technischen Dateien liegen im Buch-Repo (https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills), nicht als SKILL.md-Dump in diesem Kapitel und nicht in privaten Autor-Repos. So bleibt das Kapitel für GF lesbar und für IT anschlussfähig.
 
 ### Schlechte vs. gute Schnitte (Muster)
 
@@ -102,7 +102,7 @@ Ein Skill ohne Pflege wird zum **Skill-Friedhof**: viele Namen, niemand weiß, w
 
 Ohne Code im Buch, aber mit Betriebsregeln: Name und Zweck bleiben stabil; Verhalten ändert sich bewusst. Änderungen sind nachvollziehbar — was wurde geschärft, welche Inputs und Outputs, welche Verbote? Die aktuelle Version ist erkennbar, für Fachseite und IT gleichermaßen. Alte Varianten werden abgelegt oder markiert, nicht heimlich weiterverwendet. Und Abschaltung ist erlaubt und vorgesehen, wenn Qualität kippt oder der Workflow stirbt.
 
-Dieses Buch spezifiziert **Beispiel-Skills als Steckbrief** (Outcome, Inputs, Outputs, Checks, Verbote) — recherchiert und fürs Buch entwickelt, nicht aus privaten Skill-Repos. Rohdateien drucken wir nicht. Ein öffentlicher Companion wäre optional und nur nach ausdrücklicher Freigabe; private Repos der Autorenseite gehören weder ins Buch noch an Leser.
+Dieses Buch spezifiziert **Beispiel-Skills** (Outcome, Inputs, Outputs, Checks, Verbote) — für die Zielgruppen entwickelt, nicht aus privaten Skill-Repos. Die Dateien liegen unter https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills zum Download/Copy-Paste. Im Buch stehen Wie/Warum/Wo; Rohdateien drucken wir nicht.
 
 ### Wer pflegt was
 
@@ -140,7 +140,7 @@ Dieser Zyklus ist das Betriebsbild hinter dem Cover-Versprechen „bauen, testen
 
 ## Anti-Patterns, die Skill-Denken zerstören
 
-Die Fallen sind bekannt; die Gegenmittel passen in einen Atemzug. Prompt-Kopien statt Baustein heilen Sie mit einem Namen, einem Steckbrief, einer aktuellen Version. Den Skill-Friedhof mit Inventur, Owner und Ablage-Pflicht. Versteckte Rechte („darf mal eben alles lesen“) mit Verboten und Datenminimierung im Steckbrief plus IT-Freigabe. Den Alleskönner-Skill mit einem Outcome und Orchestrierung separat. Live ohne Freigabe mit der Stufe intern → kundenreif und Mensch für Geld, Recht, Außenwirkung. Und Code im Buch, Schatten-Kopien oder Privat-Repos mit Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) — optional später öffentlicher Companion nach Freigabe; keine Rohdatei-Pflege in Chat und Folien; keine privaten Autor-Repos verlinken.
+Die Fallen sind bekannt; die Gegenmittel passen in einen Atemzug. Prompt-Kopien statt Baustein heilen Sie mit einem Namen, einem Steckbrief, einer aktuellen Version. Den Skill-Friedhof mit Inventur, Owner und Ablage-Pflicht. Versteckte Rechte („darf mal eben alles lesen“) mit Verboten und Datenminimierung im Steckbrief plus IT-Freigabe. Den Alleskönner-Skill mit einem Outcome und Orchestrierung separat. Live ohne Freigabe mit der Stufe intern → kundenreif und Mensch für Geld, Recht, Außenwirkung. Und Code im Buch, Schatten-Kopien oder Privat-Repos mit https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills — optional später öffentlicher Companion nach Freigabe; keine Rohdatei-Pflege in Chat und Folien; keine privaten Autor-Repos verlinken.
 
 Kapitel 8 vertieft Bau und Qualitätskriterien; Kapitel 15 sammelt Fehler und Gegenmittel buchweit.
 
@@ -168,7 +168,7 @@ Kreis oder horizontale Kette mit fünf Stationen:
 
 **Seitlicher Kasten:** „Skill = ein Outcome · klare Inputs/Outputs · prüfbar · übergebbar“
 
-**Fußnote:** „Beispiel-Skills als Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) — kein Rohcode, kein Privat-Repo. Finale Freigabe, Geld, Recht, Strategie, Personal: Mensch.“
+**Fußnote:** „Beispiel-Skills als https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills — kein Rohcode, kein Privat-Repo. Finale Freigabe, Geld, Recht, Strategie, Personal: Mensch.“
 
 **Nicht zeigen:** SKILL.md-Inhalt, YAML, Produktlogos als Empfehlung, ROI-Zahlen, erfundene Kennzahlen.
 
@@ -180,8 +180,8 @@ Welche Outcomes überhaupt einen Skill verdienen; dass Bausteine vor neuen Agent
 
 ### Was die IT-Leitung umsetzt
 
-Skill-Bibliothek als Betriebsobjekt: Ort, Versionierung, Zugänge, Logs, Abschaltbarkeit; Steckbriefe an technische Umsetzung im **Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`** koppeln; Alleskönner- und Schatten-Skills inventarisieren; Fachbereichen beim Schnitt „ein Outcome“ helfen.
+Skill-Bibliothek als Betriebsobjekt: Ort, Versionierung, Zugänge, Logs, Abschaltbarkeit; Steckbriefe an technische Umsetzung im **Datei im Buch-Repo: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills`** koppeln; Alleskönner- und Schatten-Skills inventarisieren; Fachbereichen beim Schnitt „ein Outcome“ helfen.
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) als Steckbrief skizzieren: Outcome, Inputs, Outputs, Checkliste, Verbote. Einmal mit echten Notizen testen und Review-Aufwand notieren. Noch keinen neuen Agenten bauen. Pflege-Slot im Kalender. Bau und Vorlagen später über Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`.
+Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) als Steckbrief skizzieren: Outcome, Inputs, Outputs, Checkliste, Verbote. Einmal mit echten Notizen testen und Review-Aufwand notieren. Noch keinen neuen Agenten bauen. Pflege-Slot im Kalender. Datei: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/angebot-aus-kickoff/SKILL.md.

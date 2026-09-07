@@ -25,7 +25,7 @@ Ownership ist mehr als ein Feld im Steckbrief. Es beginnt bei der Ergebnisverant
 
 Regel für jedes Vorhaben: **ein Satz Outcome, ein namentlicher Owner, eine Freigabegrenze.** Fehlt einer der drei, ist das Vorhaben noch nicht betriebsreif — egal wie gut die Demo wirkt.
 
-Geschäftsführung steuert besser über wenige Outcomes mit Ownern als über eine wachsende Liste von Bot-Namen. Fragen Sie in Reviews: Welche Outcomes laufen? Wer ist Owner? Welche sind pausiert oder abgelegt? Die Skill-Bibliothek — Verweis: **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)** — ist der technische Ort; das Portfolio ist die Führungsansicht. Wenige harte Outcomes schlagen einen Agenten-Zoo — das gilt für Mittelstand und Solo gleichermaßen (Kapitel 3).
+Geschäftsführung steuert besser über wenige Outcomes mit Ownern als über eine wachsende Liste von Bot-Namen. Fragen Sie in Reviews: Welche Outcomes laufen? Wer ist Owner? Welche sind pausiert oder abgelegt? Die Skill-Bibliothek — Verweis: **Datei im Buch-Repo: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills`** — ist der technische Ort; das Portfolio ist die Führungsansicht. Wenige harte Outcomes schlagen einen Agenten-Zoo — das gilt für Mittelstand und Solo gleichermaßen (Kapitel 3).
 
 Der Name gehört in Steckbrief, Pilot-Gate und Betriebshandbuch light — nicht nur in eine Folie. Formulierungen wie „Fachbereich Vertrieb“ oder „zuständige Stelle“ sind Platzhalter, keine Ownership. Wenn zwei Personen sich den Hut teilen wollen: Eine ist Owner, die andere Mitwirkende oder Vertretung. Geteilte Ownership ohne Primat endet in geteilter Verantwortungslosigkeit — und das merkt man erst, wenn niemand abschaltet.
 
@@ -79,7 +79,7 @@ Eine Person darf mehrere Hüte tragen — wenn die Hüte benannt sind. Der Owner
 
 Praktisch: Im Steckbrief oder auf einer Notizseite die Hüte auflisten, auch wenn zweimal derselbe Name steht. Das wirkt pedantisch und spart im Streitfall Wochen. Solo: Owner und Freigabe sind oft „ich“ — trotzdem trennen Sie zeitlich Entwurf und Freigabe: Rohbau erzeugen, Pause, dann bewusst freigeben. Derselbe Name, zwei Momente — das verhindert die Selbsttäuschung „hab ich schon ok gefunden, während ich getippt habe“.
 
-Was kleine Betriebe nicht weglassen sollten: namentlicher Owner je produktivem Outcome — auch wenn es nur drei sind; eine Freigabegrenze auf einer Seite, besonders für Kundenreife und Geld; eine aktuelle Version je Skill über Bibliothek bzw. **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)**, keine Parallel-Prompts; Abschaltbarkeit, damit Sie wissen, *was* Sie stoppen, wenn Qualität kippt; und eine Vertretungsnotiz — wer übernimmt bei Abwesenheit, oder Pause per Default. Was sie weglassen dürfen: Konzerndokumentation, RACI mit zwölf Spalten, Abteilungsbots „weil die Großen das auch haben“. Kapitel 13 vertieft Solo-Muster; hier reicht die Organisationsregel: **schlank ja, anonym nein**.
+Was kleine Betriebe nicht weglassen sollten: namentlicher Owner je produktivem Outcome — auch wenn es nur drei sind; eine Freigabegrenze auf einer Seite, besonders für Kundenreife und Geld; eine aktuelle Version je Skill über Bibliothek bzw. **Datei im Buch-Repo: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills`**, keine Parallel-Prompts; Abschaltbarkeit, damit Sie wissen, *was* Sie stoppen, wenn Qualität kippt; und eine Vertretungsnotiz — wer übernimmt bei Abwesenheit, oder Pause per Default. Was sie weglassen dürfen: Konzerndokumentation, RACI mit zwölf Spalten, Abteilungsbots „weil die Großen das auch haben“. Kapitel 13 vertieft Solo-Muster; hier reicht die Organisationsregel: **schlank ja, anonym nein**.
 
 Mit wachsendem Team werden Hüte zu Personen. Dann gilt: Ownership nicht „mitwachsen lassen“, sondern bewusst übergeben. Neuer Owner, kurzer Handoff, alte Chat-Varianten ablegen. Sonst entsteht Doppel-Ownership — zwei Wahrheiten, eine Bibliothek.
 
@@ -111,7 +111,7 @@ Vereinfachte Matrix — **keine** klassische Vier-Buchstaben-Vollform mit Konzer
 
 **Seitlicher Kasten:** „ein Outcome · ein Owner · eine Freigabegrenze“
 
-**Fußzeile:** „Bots/Skills sind Mitwirkende — nie Owner. RACI-light: Verantwortung namentlich, nicht abteilungsweise. Umsetzungshilfen: Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode) — kein Rohcode im Buch.“
+**Fußzeile:** „Bots/Skills sind Mitwirkende — nie Owner. RACI-light: Verantwortung namentlich, nicht abteilungsweise. Umsetzungshilfen: Datei im Buch-Repo: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills` — kein Rohcode im Buch.“
 
 **Nicht zeigen:** Produktlogos, ROI, erfundene Kennzahlen, YAML/SKILL.md, vollständige Konzern-RACI mit Dutzenden Zeilen.
 
@@ -127,4 +127,4 @@ Owner und Freigabegrenzen in Betrieb übersetzen: Identitäten, Least Privilege,
 
 ### Was Solo / Freiberufler morgen starten können
 
-Ein Blatt: drei Spalten „Outcome / Owner (ich) / Freigabegrenze“. Einen wiederkehrenden Schritt eintragen (z. B. Angebotsentwurf). Hüte notieren — auch wenn zweimal derselbe Name steht. Entwurf und kundenreife Freigabe zeitlich trennen. Noch keinen Abteilungsbot bauen. Aktuelle Version später an **Beispiel-Skill-Steckbrief (im Buch spezifiziert — kein Privat-Repo, kein Rohcode)** koppeln; bis dahin Steckbrief und klare Stopp-Linie reichen.
+Ein Blatt: drei Spalten „Outcome / Owner (ich) / Freigabegrenze“. Einen wiederkehrenden Schritt eintragen (z. B. Angebotsentwurf). Hüte notieren — auch wenn zweimal derselbe Name steht. Entwurf und kundenreife Freigabe zeitlich trennen. Noch keinen Abteilungsbot bauen. Aktuelle Version später an **Datei im Buch-Repo: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills`** koppeln; bis dahin Steckbrief und klare Stopp-Linie reichen.

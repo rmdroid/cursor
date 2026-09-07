@@ -59,7 +59,7 @@ Ein Skill ist die kleinste sinnvolle Einheit, die Sie bauen, testen und übergeb
 
 > Ein Skill verdient Geld, wenn er einen wiederkehrenden Schritt so festmacht, dass Zeit, Fehler und Übergabeaufwand sinken — ohne dass Strategie, Geld, Recht oder finale Freigabe an die Maschine abgegeben werden.
 
-Rohcode und Dateiformate gehören nicht ins Buch. Wer implementieren will, findet die kanonischen Vorlagen im **Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`**. <!-- LEKTOR @Klaus: kanonische öffentliche URL nachziehen, sobald Companion freigegeben. --> Mit dieser Landkarte wird die nächste Frage greifbar: Welcher Workflow verdient überhaupt eine solche Fähigkeit?
+Rohcode und Dateiformate gehören nicht ins Buch. Wer implementieren will, findet die Vorlagen unter ** https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills`**. Mit dieser Landkarte wird die nächste Frage greifbar: Welcher Workflow verdient überhaupt eine solche Fähigkeit?
 
 ## Welche Workflows ein Skill verdienen
 
@@ -168,4 +168,4 @@ Zugänge, Logging und Datengrenzen für erste Skills/Agenten; erlaubten Pfad sta
 
 ### Was Solo / Freiberufler morgen starten können
 
-Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) aufschreiben: Inputs, Output, Prüfpunkte — und daraus den ersten Skill-Entwurf machen, ohne einen Zoo zu bauen. Umsetzungshilfe: Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) (siehe oben).
+Einen wiederkehrenden Schritt (z. B. Angebot aus Kickoff-Notizen) aufschreiben: Inputs, Output, Prüfpunkte — und daraus den ersten Skill-Entwurf machen, ohne einen Zoo zu bauen. Umsetzung: https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/angebot-aus-kickoff/SKILL.md.

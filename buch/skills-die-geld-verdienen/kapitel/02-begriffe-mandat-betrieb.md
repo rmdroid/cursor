@@ -35,7 +35,7 @@ Merksatz: **Routine folgt Bewährung, Bewährung folgt manuellem Ablauf.** Wer d
 
 ### Skill
 
-Ein **Skill** ist eine wiederholbare, prüfbare, übergebbare Fähigkeit mit einem klaren Outcome (Landkarte Chat → Assistent → Agent → Skill: Kapitel 1). Er ist kein Chat-Verlauf und kein Abteilungs-Bot. Er hat benennbare Inputs und Outputs und Qualitätskriterien, an denen ein Mensch ihn abnehmen kann. Skills sind die wiederholbaren Fähigkeiten; Agenten orchestrieren sie. Details und Anti-Patterns: Kapitel 4 und 8. Implementierungsvorlagen: **Beispiel-Skill im Buch-Repo (`https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills/…`) — Beschreibung im Text, Datei zum Download/Copy-Paste; kein `rmdroid/skills`** — nicht als Rohcode in diesem Buch. <!-- LEKTOR @Klaus: kanonische URL nachziehen. -->
+Ein **Skill** ist eine wiederholbare, prüfbare, übergebbare Fähigkeit mit einem klaren Outcome (Landkarte Chat → Assistent → Agent → Skill: Kapitel 1). Er ist kein Chat-Verlauf und kein Abteilungs-Bot. Er hat benennbare Inputs und Outputs und Qualitätskriterien, an denen ein Mensch ihn abnehmen kann. Skills sind die wiederholbaren Fähigkeiten; Agenten orchestrieren sie. Details und Anti-Patterns: Kapitel 4 und 8. Implementierungsvorlagen: ** https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (z. B. `angebot-aus-kickoff/SKILL.md`) — im Text nur Wie/Warum/Wo, kein SKILL.md-Dump; kein `rmdroid/skills`** — nicht als Rohcode in diesem Buch.
 
 ### Agent
 
@@ -75,7 +75,7 @@ Was ein Skill **nicht** ist: ein einmaliger Chat-Thread; „unser Marketing-Bot�
 
 Gute Skill-Grenzen folgen der Regel: **ein Outcome**. Wenn Sie „recherchieren, schreiben, layouten und versenden“ in eine Fähigkeit pressen, verlieren Sie Prüfbarkeit und Freigabe. Besser: getrennte Skills und ein Agent oder Mensch, der orchestriert.
 
-Steckbrief-Denke ohne Code: Name des Skills, Outcome in einem Satz, Inputs, Outputs, Qualitätscheck, Owner, was der Skill bewusst *nicht* darf. Mehr braucht die Fachseite für den Start. Die technische Form liegt im Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) (siehe oben). Was der Skill nicht darf, führt direkt zur nächsten Linie — der Verantwortungsgrenze.
+Steckbrief-Denke ohne Code: Name des Skills, Outcome in einem Satz, Inputs, Outputs, Qualitätscheck, Owner, was der Skill bewusst *nicht* darf. Mehr braucht die Fachseite für den Start. Die technische Form liegt im https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills (siehe oben). Was der Skill nicht darf, führt direkt zur nächsten Linie — der Verantwortungsgrenze.
 
 ## Was bewusst menschlich bleibt
 
@@ -140,7 +140,7 @@ Ein kurzer Übersetzungstest: Lässt sich Ihr Vorhaben in den Sätzen „Outcome
 
 ## Vom Begriff zur Praxis — ohne Code im Buch
 
-Dieses Buch erklärt Skills und Agenten **inhaltlich**: Steckbriefe, Qualitätskriterien, Betriebsregeln. Es druckt keine Skill-Rohdateien und keine YAML-Dumps. Wer bauen will, legt Outcome und Grenze fest (Kapitel 4), beschreibt Steckbrief und Tests (Kapitel 8), nutzt Umsetzung und Vorlagen im Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/) und sichert Freigabe und Betrieb (Kapitel 5 und 9).
+Dieses Buch erklärt Skills und Agenten **inhaltlich**: Steckbriefe, Qualitätskriterien, Betriebsregeln. Es druckt keine Skill-Rohdateien und keine YAML-Dumps. Wer bauen will, legt Outcome und Grenze fest (Kapitel 4), beschreibt Steckbrief und Tests (Kapitel 8), nutzt Umsetzung und Vorlagen im https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills und sichert Freigabe und Betrieb (Kapitel 5 und 9).
 
 So bleibt das Buch für GF lesbar, für IT anschlussfähig und für Solo umsetzbar — ohne dass ein Buchkapitel zur veralteten Codekopie wird. Bevor der Bau beginnt, lohnt noch der Blick auf die Fallen, in denen Begriffe besonders oft verrutschen.
 
@@ -194,4 +194,4 @@ Begriffe in Architektur und Betriebshandbuch light übersetzen: Identitäten, Zu
 
 ### Was Solo / Freiberufler morgen starten können
 
-Ein Blatt (oder eine Notiz): eigener Mini-Glossar mit Workflow, Skill, Owner, Freigabe — und die Regel „Was zum Kunden geht, hat Freigabe“. Ersten Skill nur für einen Outcome skizzieren; Bau später über den Skill-Datei im Buch-Repo (vgl. Kap. 8 / skills/).
+Ein Blatt (oder eine Notiz): eigener Mini-Glossar mit Workflow, Skill, Owner, Freigabe — und die Regel „Was zum Kunden geht, hat Freigabe“. Ersten Skill nur für einen Outcome skizzieren; Bau später über https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills.
