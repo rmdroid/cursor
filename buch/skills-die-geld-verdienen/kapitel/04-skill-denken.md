@@ -154,7 +154,7 @@ Als Nächstes in Teil II: **Organisation & Ownership** (Kapitel 5), wer Outcome 
 
 ## Abbildung
 
-![Skill-Lebenszyklus: Idee → Test → Freigabe → Betrieb → Ablage.](./assets/grafiken/04-skill-lebenszyklus.png)
+![Skill-Lebenszyklus: Idee → Test → Freigabe → Betrieb → Ablage.](../assets/grafiken/04-skill-lebenszyklus.png)
 
 *Abbildung 4: Skill-Lebenszyklus: Idee → Test → Freigabe → Betrieb → Ablage.*
 

@@ -134,7 +134,7 @@ Lesepfad light für dieses Kapitel: GF liest Pipeline-Felder Owner/Entscheidung/
 
 ## Abbildung
 
-![Pipeline End-to-End: vom Trigger zum Nachweis. Verantwortungsgrenze: Strategie, Geld, Recht, Personal und finale Freigabe bleiben beim Menschen.](./assets/grafiken/07-pipeline-end-to-end.png)
+![Pipeline End-to-End: vom Trigger zum Nachweis. Verantwortungsgrenze: Strategie, Geld, Recht, Personal und finale Freigabe bleiben beim Menschen.](../assets/grafiken/07-pipeline-end-to-end.png)
 
 *Abbildung 7: Pipeline End-to-End. Trigger → Inputs → Schritte → Entscheidungen → Owner → Output → Nachweis. Keine Kennzahlen; kleinste ausreichende Intervention zuerst; Pilot vor Skalierung.*
 

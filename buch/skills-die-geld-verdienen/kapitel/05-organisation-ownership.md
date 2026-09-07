@@ -95,7 +95,7 @@ Die Fallen sind Organisationsfehler, keine Modellfehler und ein besseres Prompt 
 
 ## Abbildung
 
-![RACI-light für Agenten-Vorhaben: Owner namentlich, Bots nur Mitwirkende.](./assets/grafiken/05-raci-light-agenten.png)
+![RACI-light für Agenten-Vorhaben: Owner namentlich, Bots nur Mitwirkende.](../assets/grafiken/05-raci-light-agenten.png)
 
 *Abbildung 5: RACI-light für Agenten-Vorhaben: Owner namentlich, Bots nur Mitwirkende.*
 

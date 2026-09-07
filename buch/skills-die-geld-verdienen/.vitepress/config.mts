@@ -106,7 +106,14 @@ export default defineConfig({
     'Welche Workflows ein Skill verdienen. Bauen, testen, im Mandat einsetzen.',
   // Dist is the GitHub Pages root for rmdroid/cursor → https://rmdroid.github.io/cursor/
   base: '/cursor/',
-  srcExclude: ['briefings/**', 'README.md', 'SITE.md', 'exports/**'],
+  srcExclude: [
+    'briefings/**',
+    'README.md',
+    'SITE.md',
+    'exports/**',
+    'skills/**',
+    'assets/**/*.md',
+  ],
   ignoreDeadLinks: 'localhostLinks',
   cleanUrls: true,
   lastUpdated: true,
