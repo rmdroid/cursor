@@ -1,0 +1,64 @@
+# Build VitePress from buch/skills-die-geld-verdienen and deploy as the
+# GitHub Pages root for rmdroid/cursor → https://rmdroid.github.io/cursor/
+name: Deploy VitePress book site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: buch/skills-die-geld-verdienen
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: buch/skills-die-geld-verdienen/package-lock.json
+      - name: Cache VitePress
+        uses: actions/cache@v4
+        with:
+          path: buch/skills-die-geld-verdienen/.vitepress/cache
+          key: ${{ runner.os }}-vitepress-${{ hashFiles('buch/skills-die-geld-verdienen/package-lock.json', 'buch/skills-die-geld-verdienen/**/*.md', 'buch/skills-die-geld-verdienen/.vitepress/**') }}
+          restore-keys: |
+            ${{ runner.os }}-vitepress-
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with VitePress
+        run: npm run docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: buch/skills-die-geld-verdienen/.vitepress/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
