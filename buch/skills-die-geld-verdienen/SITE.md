@@ -27,14 +27,14 @@ Workflow: `.github/workflows/deploy-docs.yml` — auf PRs nur Build, Deploy nur 
 
 ### Der eine Settings-Klick
 
-Falls Actions die Site noch nicht ausspielen darf:
+Falls Actions die Site noch nicht ausspielen darf (einmalig):
 
 1. Repo **rmdroid/cursor** → **Settings** → **Pages**
 2. **Build and deployment → Source:** **GitHub Actions**
 
 Danach reicht ein Push auf `main` (oder **Actions** → **Deploy VitePress book site** → **Run workflow**).
 
-Wenn der Workflow auf der ersten Pages-Freigabe wartet: nach dem Speichern der Source noch einmal den Workflow anstoßen.
+Der Workflow versucht Pages beim Deploy auch selbst zu aktivieren (`enablement: true`). Wenn GitHub das ablehnt, reicht der Settings-Klick oben. PRs prüfen nur den VitePress-Build und brauchen keine Pages-Freigabe.
 
 ## Was die Site nicht veröffentlicht
 

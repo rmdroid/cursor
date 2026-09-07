@@ -41,8 +41,6 @@ jobs:
           key: ${{ runner.os }}-vitepress-${{ hashFiles('buch/skills-die-geld-verdienen/package-lock.json', 'buch/skills-die-geld-verdienen/**/*.md', 'buch/skills-die-geld-verdienen/.vitepress/**') }}
           restore-keys: |
             ${{ runner.os }}-vitepress-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
       - name: Build with VitePress
@@ -61,6 +59,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
