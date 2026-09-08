@@ -1,7 +1,7 @@
 ---
 title: "Anhang D: Beispiel-Skills und Weiterführendes"
 chapter: D
-status: entwurf
+status: lektorat-auflagen
 author: Mara
 date: 2026-09-08
 book: Skills, die Geld verdienen
@@ -13,16 +13,16 @@ Drei Muster-Skills für Mittelstand und Freelancer, spezifiziert als Steckbriefe
 
 **Basis-URL:** https://github.com/rmdroid/cursor/tree/main/buch/skills-die-geld-verdienen/skills
 
-Hinweis: **Kein** Privat-Repo `rmdroid/skills`. Die Buch-Beispiele sind für die Zielgruppen spezifiziert und unter dem Pfad oben abgelegt (Download / Copy-Paste). Ein optionaler öffentlicher Companion erscheint nur nach ausdrücklicher Freigabe; bis dahin gilt diese Bibliothek.
+Hinweis: **Kein** Privat-Repo `rmdroid/skills`. Die Buch-Beispiele sind für die Zielgruppen spezifiziert und unter dem Pfad oben abgelegt (Download / Copy-Paste). Ein optionaler öffentlicher Companion erscheint nur nach ausdrücklicher Freigabe. Bis dahin gilt diese Bibliothek.
 
 Kurzfassungen und Bau-Walkthrough: **Kapitel 4** und **Kapitel 8**. Feldliste zum Abhaken: **Anhang B**. Begriffe: **Anhang A**.
 
 ## Gemeinsame Regeln der drei Muster
 
-- Ein Outcome pro Skill; kein Alleskönner.
-- Entwurf erlaubt; Versand, Preis, verbindlicher Scope und kundenreife Zusage bleiben Mensch.
+- Ein Outcome pro Skill. Kein Alleskönner.
+- Entwurf erlaubt. Versand, Preis, verbindlicher Scope und kundenreife Zusage bleiben Mensch.
 - Stopp bei fehlenden, stale oder widersprüchlichen Inputs ohne Klärungsweg.
-- Owner namentlich bzw. als Rolle; Vertretung sichtbar.
+- Owner namentlich bzw. als Rolle. Vertretung sichtbar.
 - Repo-Verweis immer auf die öffentliche Buch-Bibliothek, nie auf private Autor-Repos.
 
 ## 1. angebot-aus-kickoff
@@ -39,11 +39,11 @@ Uneinheitliche Angebote und vergessene Annahmen kosten Nacharbeit und Vertrauen:
 
 **Outcome.** Aus Kickoff-Notizen entsteht ein strukturierter Angebotsentwurf mit Leistungen, Annahmen, offenen Punkten und nächsten Schritten, bereit für menschliche Freigabe von Preis, Scope und Risiko.
 
-**Inputs.** Kickoff-Notizen oder kurzer Transkript-Auszug (Stichworte reichen); bekannte Rahmenbedingungen (Zeitfenster, Lieferform, Ausschlüsse, soweit klar); optional interne Angebotsstruktur oder Vorlage.
+**Inputs.** Kickoff-Notizen oder kurzer Transkript-Auszug (Stichworte reichen). Bekannte Rahmenbedingungen (Zeitfenster, Lieferform, Ausschlüsse, soweit klar). Optional interne Angebotsstruktur oder Vorlage.
 
-**Nicht als Input.** Geheimnisse, die nicht in den Entwurf gehören; endgültige Preise „aus dem Bauch“ ohne Owner-Entscheidung.
+**Nicht als Input.** Geheimnisse, die nicht in den Entwurf gehören. Endgültige Preise „aus dem Bauch“ ohne Owner-Entscheidung.
 
-**Outputs.** Strukturierter Entwurfstext (z. B. Ausgangslage, Leistungsumfang, Annahmen, offene Punkte, nächste Schritte); markierte Lücken; Platzhalter oder klarer Hinweis für Preis und verbindlichen Scope ohne KI-Zusage; kurze Owner-Checkliste.
+**Outputs.** Strukturierter Entwurfstext (z. B. Ausgangslage, Leistungsumfang, Annahmen, offene Punkte, nächste Schritte). Markierte Lücken. Platzhalter oder klarer Hinweis für Preis und verbindlichen Scope ohne KI-Zusage. Kurze Owner-Checkliste.
 
 **Qualitätschecks (abhaken).**
 
@@ -55,7 +55,7 @@ Uneinheitliche Angebote und vergessene Annahmen kosten Nacharbeit und Vertrauen:
 
 **Owner-Rolle.** Fach-Owner Angebot / Vertrieb bzw. Freelancer selbst: prüft Inhalt, setzt Preis und Scope, gibt kundenreif frei. IT stellt Vorlage und Ablage bereit, entscheidet nicht über Kommerz.
 
-**Verbote / Stopp.** Kein Versand an den Kunden aus dem Skill. Keine erfundenen Preise, Rabatte oder Liefertermine. Kein „wir können das auch noch“ ohne Notiz im Input. Stopp bei fehlenden oder widersprüchlichen Notizen ohne Klärungsweg; Stopp bei sensiblen Daten, die nicht in Angebote gehören.
+**Verbote / Stopp.** Kein Versand an den Kunden aus dem Skill. Keine erfundenen Preise, Rabatte oder Liefertermine. Kein „wir können das auch noch“ ohne Notiz im Input. Stopp bei fehlenden oder widersprüchlichen Notizen ohne Klärungsweg. Stopp bei sensiblen Daten, die nicht in Angebote gehören.
 
 **Mandat-Hinweis.** Der Kunde sieht ein einheitlich strukturiertes Angebot bzw. einen Entwurf, nicht den Skill-Namen. Verbindlich wird erst, was der Owner freigibt und versendet.
 
@@ -79,9 +79,9 @@ Nach Jour fixe, Projektmeeting oder Kundenabstimmung fehlt oft die Struktur: Was
 
 **Outcome.** Aus Meeting-Notizen oder einem Transkript-Auszug entsteht ein knappes Protokoll mit getroffenen Entscheidungen, offenen Punkten und benannten Ownern, abnahmefähig für den Meeting-Owner.
 
-**Inputs.** Meeting-Notizen und/oder gekürzter Transkript-Auszug; Teilnehmerliste bzw. Rollen; optional Agenda oder Ziel; optional Konventionen, wie Entscheidungen markiert werden.
+**Inputs.** Meeting-Notizen und/oder gekürzter Transkript-Auszug. Teilnehmerliste bzw. Rollen. Optional Agenda oder Ziel. Optional Konventionen, wie Entscheidungen markiert werden.
 
-**Outputs.** Kurzkopf (Datum, Teilnehmende, Zweck soweit ableitbar); Abschnitt Entscheidungen (als beschlossen formuliert); Abschnitt Offene Punkte; Abschnitt Maßnahmen mit Owner und Zieltermin nur wenn im Input genannt, sonst „Termin offen / Owner nachziehen“; Markierung dessen, was im Input *nicht* klar entschieden war.
+**Outputs.** Kurzkopf (Datum, Teilnehmende, Zweck soweit ableitbar). Abschnitt Entscheidungen (als beschlossen formuliert). Abschnitt Offene Punkte. Abschnitt Maßnahmen mit Owner und Zieltermin nur, wenn im Input genannt, sonst „Termin offen / Owner nachziehen“. Markierung dessen, was im Input *nicht* klar entschieden war.
 
 **Qualitätschecks (abhaken).**
 
@@ -89,9 +89,9 @@ Nach Jour fixe, Projektmeeting oder Kundenabstimmung fehlt oft die Struktur: Was
 - [ ] Jede Maßnahme hat Owner-Namen oder „Owner fehlt“
 - [ ] Keine neuen Zusagen an Kunden oder Lieferanten außerhalb des Inputs
 - [ ] Keine stillen Umdeutungen („wir prüfen“ wird nicht zu „wir liefern“)
-- [ ] Länge nutzbar; Unklarheiten markiert statt weggeredet
+- [ ] Länge nutzbar. Unklarheiten markiert statt weggeredet
 
-**Owner-Rolle.** Meeting-Owner bzw. Projektleitung (Solo: wer den Termin geführt hat). Freigabe vor Ablage oder Versand an Teilnehmende; bei Kundenmeetings zusätzliche Freigabe vor externem Versand.
+**Owner-Rolle.** Meeting-Owner bzw. Projektleitung (Solo: wer den Termin geführt hat). Freigabe vor Ablage oder Versand an Teilnehmende. Bei Kundenmeetings zusätzliche Freigabe vor externem Versand.
 
 **Verbote / Stopp.** Kein automatischer Versand. Keine erfundenen Beschlüsse, Owner oder Termine. Keine Personalbewertungen oder Vertrauliches „zwischen den Zeilen“. Stopp bei unbrauchbarem Input oder widersprüchlichen Kernentscheidungen. Rechtliche oder vertragliche Formulierungen nur als offener Punkt, nicht als Pseudo-Beschluss.
 
@@ -117,9 +117,9 @@ Regelmäßige Transparenz im laufenden Mandat scheitert oft an Drift: interne St
 
 **Outcome.** Aus aktuellen internen Statusdaten entsteht ein kurzer, kundenreifer Statusentwurf (Fortschritt, Blocker, nächste Schritte), bereit zum Senden erst nach Owner-Freigabe.
 
-**Inputs.** Aktueller interner Stand (Stichpunkte, Ticket-/Aufgabenlage, letzte Meilensteine); bekannte Blocker und Abhängigkeiten; geplante nächste Schritte und Zeithorizont soweit vereinbart; Ton/Rahmen der Kundenkommunikation falls festgelegt; Kennzeichnung, was bereits kundenkommuniziert vs. nur intern ist.
+**Inputs.** Aktueller interner Stand (Stichpunkte, Ticket-/Aufgabenlage, letzte Meilensteine). Bekannte Blocker und Abhängigkeiten. Geplante nächste Schritte und Zeithorizont, soweit vereinbart. Ton/Rahmen der Kundenkommunikation, falls festgelegt. Kennzeichnung, was bereits kundenkommuniziert vs. nur intern ist.
 
-**Outputs.** Kurzer Statusentwurf (erledigt / in Arbeit / blockiert / als Nächstes); getrennte Liste nur intern; Markierung „Entwurf, Versand gesperrt bis Freigabe“; optional Betreff- und Anrede-Vorschlag ohne Absendeaktion.
+**Outputs.** Kurzer Statusentwurf (erledigt / in Arbeit / blockiert / als Nächstes). Getrennte Liste nur intern. Markierung „Entwurf, Versand gesperrt bis Freigabe“. Optional Betreff- und Anrede-Vorschlag ohne Absendeaktion.
 
 **Qualitätschecks (abhaken).**
 
@@ -127,7 +127,7 @@ Regelmäßige Transparenz im laufenden Mandat scheitert oft an Drift: interne St
 - [ ] Blocker sachlich, ohne Schuldzuweisung und ohne neue Versprechen
 - [ ] Keine Preise, Vertragsänderungen oder Scope-Erweiterungen nebenbei
 - [ ] Zeitangaben nur, wenn im Input belegt oder vom Owner gesetzt
-- [ ] Entwurf endet mit Freigabe-Hinweis; kein „gesendet“-Zustand durch den Skill
+- [ ] Entwurf endet mit Freigabe-Hinweis. Kein „gesendet“-Zustand durch den Skill
 
 **Owner-Rolle.** Mandats-Owner / Kundenverantwortung (GF-Projektleitung oder Freelancer). Nur diese Rolle gibt den Versand frei. Vertretung nur mit klarer Übergabe der Freigabeberechtigung.
 
@@ -152,7 +152,7 @@ Im Rhythmus des Mandats (Wochenstatus, Meilenstein, vor Steuerkreis), nicht als 
 | Betrieb, Eskalation, Soft-Stop | Kapitel 9 |
 | Messen ohne Fantasie-ROI | Kapitel 10 |
 | Schatten-KI und Betriebshandbuch light | Kapitel 12 |
-| Lauffähige Dateien | Basis-URL oben; je Skill-Unterordner |
+| Lauffähige Dateien | Basis-URL oben, je Skill-Unterordner |
 | Quellen | Anhang C |
 
 **Companion (optional, später).** Ein erweiterter öffentlicher Companion (weitere Muster, Checklisten-Pakete, ggf. Video/Walkthrough) erscheint nur nach Freigabe durch Verlag/Autorlinie. Bis dahin: dieses Anhang-D plus die Buch-Bibliothek unter der Basis-URL. Keine parallele „geheime“ Skill-Wahrheit in privaten Repos für Buchleser.
