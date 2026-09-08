@@ -93,7 +93,7 @@ Jedes Praxiskapitel endet mit: *Was GF entscheidet / Was IT umsetzt / Was Solo m
 
 ## Teil III. Vom Use Case zum laufenden System (ca. 48–56 S.)
 
-### Kap. 7. Methode: Prozess → Agent (~16–18 S.)
+### Kap. 7. Methode: Vom Prozess zum Agenten (~16–18 S.)
 - Trigger → Inputs → Schritte → Entscheidungen → Owner → Output → Nachweis
 - Pilot vor Skalierung
 - „Kleinste ausreichende Intervention“ (nichts bauen, vereinfachen, skillen, dann Agent)
@@ -148,7 +148,7 @@ Jedes Praxiskapitel endet mit: *Was GF entscheidet / Was IT umsetzt / Was Solo m
 
 ## Teil V. Umsetzung & Absicherung (ca. 22–28 S.)
 
-### Kap. 14, 90-Tage-Fahrplan (~14 S.)
+### Kap. 14. 90-Tage-Fahrplan (~14 S.)
 - Tage 1–30: Use Case wählen, Owner, Ist-Prozess, Pilot
 - Tage 31–60: Skill härten, Qualität, erste Routine nur wenn reif
 - Tage 61–90: Messen, nachschärfen, entscheiden: skalieren / pausieren / beenden

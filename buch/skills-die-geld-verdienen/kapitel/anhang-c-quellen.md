@@ -7,7 +7,7 @@ date: 2026-09-07
 book: Skills, die Geld verdienen
 ---
 
-# Anhang C. Quellenverzeichnis
+# Anhang C: Quellenverzeichnis
 
 Zentrale Liste der geprüften Quellen für Kapitel 1–6. Im Fließtext nur **Kurzbelege** (z. B. `(KfW Fokus 554)`); Details, URLs und Status stehen hier.
 

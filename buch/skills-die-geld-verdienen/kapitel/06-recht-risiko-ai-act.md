@@ -7,7 +7,7 @@ date: 2026-09-07
 book: Skills, die Geld verdienen
 ---
 
-# Recht, Risiko, EU AI Act, pragmatisch
+# Recht, Risiko, EU AI Act: pragmatisch
 
 Dieses Kapitel gibt Orientierung für Geschäftsführung, IT und Freiberufler, **kein Rechtsersatz**. Es ersetzt keine anwaltliche Prüfung, keine Datenschutz-Folgenabschätzung und keine konformitätsrechtliche Beratung. Vor Druck und vor verbindlichen Freigaben im Betrieb: die **deutsche konsolidierte Fassung** der KI-Verordnung noch einmal gegenlesen und bei Zweifel Fachberatung einholen. Fristen und Artikelnummern hier: Stand Vera-Briefing / Spot-Check 7. September 2026; der reine 2024er Amtsblatttext ist für Hochrisiko-Termine nach dem Omnibus **veraltet**. URLs und Status: **Anhang C**.
 
@@ -119,7 +119,7 @@ Keine abschließende Einstufung Ihres konkreten Systems. Kein nationales Durchf�
 
 ## Abbildung
 
-![Risikostufen und Mindestmaßnahmen nach EU-KI-VO](../assets/grafiken/06-risikostufen-mindestmassnahmen.png)
+![Risikostufen und Mindestmaßnahmen nach EU-KI-VO](./assets/grafiken/06-risikostufen-mindestmassnahmen.png)
 
 *Abbildung 6: Risikostufen und Mindestmaßnahmen nach EU-KI-VO. Orientierung, kein Rechtsersatz.*
 
