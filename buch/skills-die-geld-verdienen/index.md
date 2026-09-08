@@ -7,9 +7,6 @@ hero:
   tagline: Bauen, testen, im Mandat einsetzen. Arbeitsfassung für Geschäftsführung, IT-Leitung und Freiberufler.
   actions:
     - theme: brand
-      text: Outline lesen
-      link: /kapitel/00-outline
-    - theme: alt
       text: Kapitel 1
       link: /kapitel/01-warum-skills-geld-verdienen
 

@@ -7,7 +7,6 @@ const bookRoot = join(dirname(fileURLToPath(import.meta.url)), '..')
 const kapitelDir = join(bookRoot, 'kapitel')
 
 const KNOWN_TITLES: Record<string, string> = {
-  '00-outline.md': 'Outline',
   '01-warum-skills-geld-verdienen.md': 'Kap. 1: Warum Skills Geld verdienen',
   '02-begriffe-mandat-betrieb.md': 'Kap. 2: Begriffe, Mandat, Betrieb',
   '03-realitaetscheck.md': 'Kap. 3: Mittelstands-Realitätscheck',
@@ -21,7 +20,12 @@ const KNOWN_TITLES: Record<string, string> = {
   '11-rolle-geschaeftsfuehrung.md': 'Kap. 11: Für die Geschäftsführung',
   '12-rolle-it-leitung.md': 'Kap. 12: Für die IT-Leitung',
   '13-rolle-freiberufler.md': 'Kap. 13: Für Freiberufler und Solo-Setups',
+  '14-90-tage-fahrplan.md': 'Kap. 14: 90-Tage-Fahrplan',
+  '15-fehler-gegenmittel.md': 'Kap. 15: Typische Fehler und Gegenmittel',
+  'anhang-a-glossar.md': 'Anhang A: Glossar',
+  'anhang-b-checklisten.md': 'Anhang B: Checklisten',
   'anhang-c-quellen.md': 'Anhang C: Quellenverzeichnis',
+  'anhang-d-beispiel-skills.md': 'Anhang D: Beispiel-Skills und Weiterführendes',
 }
 
 function stem(file: string): string {
@@ -65,8 +69,7 @@ function chapterNumber(file: string): number | null {
 }
 
 function sidebar(): DefaultTheme.SidebarItem[] {
-  const files = kapitelFiles()
-  const outline = files.filter((file) => file.startsWith('00-')).map(item)
+  const files = kapitelFiles().filter((file) => file !== '00-outline.md')
   const teilI = files.filter((file) => {
     const n = chapterNumber(file)
     return n !== null && n >= 1 && n <= 3
@@ -81,17 +84,18 @@ function sidebar(): DefaultTheme.SidebarItem[] {
   }).map(item)
   const teilIV = files.filter((file) => {
     const n = chapterNumber(file)
-    return n !== null && n >= 11
+    return n !== null && n >= 11 && n <= 13
+  }).map(item)
+  const teilV = files.filter((file) => {
+    const n = chapterNumber(file)
+    return n !== null && n >= 14
   }).map(item)
   const anhang = files.filter((file) => file.startsWith('anhang-')).map(item)
 
   const groups: DefaultTheme.SidebarItem[] = [
     {
       text: 'Start',
-      items: [
-        { text: 'Startseite', link: '/' },
-        ...outline,
-      ],
+      items: [{ text: 'Startseite', link: '/' }],
     },
   ]
 
@@ -105,7 +109,10 @@ function sidebar(): DefaultTheme.SidebarItem[] {
     groups.push({ text: 'Teil III: Methode und Betrieb (Kap 7-10)', items: teilIII })
   }
   if (teilIV.length) {
-    groups.push({ text: 'Teil IV: Rollen (Kap 11+)', items: teilIV })
+    groups.push({ text: 'Teil IV: Rollen (Kap 11-13)', items: teilIV })
+  }
+  if (teilV.length) {
+    groups.push({ text: 'Teil V: Umsetzung und Absicherung (Kap 14-15)', items: teilV })
   }
   if (anhang.length) {
     groups.push({ text: 'Anhang', items: anhang })
@@ -150,7 +157,6 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Start', link: '/' },
-      { text: 'Outline', link: '/kapitel/00-outline' },
       { text: 'Kapitel', link: '/kapitel/01-warum-skills-geld-verdienen' },
     ],
     sidebar: sidebar(),
