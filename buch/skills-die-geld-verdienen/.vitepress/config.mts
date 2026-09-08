@@ -8,12 +8,20 @@ const kapitelDir = join(bookRoot, 'kapitel')
 
 const KNOWN_TITLES: Record<string, string> = {
   '00-outline.md': 'Outline',
-  '01-warum-skills-geld-verdienen.md': 'Kap. 1 — Warum Skills Geld verdienen',
-  '02-begriffe-mandat-betrieb.md': 'Kap. 2 — Begriffe, Mandat, Betrieb',
-  '03-realitaetscheck.md': 'Kap. 3 — Mittelstands-Realitätscheck',
-  '04-skill-denken.md': 'Kap. 4 — Skill-Denken',
-  '05-organisation-ownership.md': 'Kap. 5 — Organisation & Ownership',
-  '06-recht-risiko-ai-act.md': 'Kap. 6 — Recht, Risiko, EU AI Act',
+  '01-warum-skills-geld-verdienen.md': 'Kap. 1: Warum Skills Geld verdienen',
+  '02-begriffe-mandat-betrieb.md': 'Kap. 2: Begriffe, Mandat, Betrieb',
+  '03-realitaetscheck.md': 'Kap. 3: Mittelstands-Realitätscheck',
+  '04-skill-denken.md': 'Kap. 4: Skill-Denken: Bausteine statt Prompt-Chaos',
+  '05-organisation-ownership.md': 'Kap. 5: Organisation & Ownership',
+  '06-recht-risiko-ai-act.md': 'Kap. 6: Recht, Risiko, EU AI Act: pragmatisch',
+  '07-methode-prozess-agent.md': 'Kap. 7: Methode: Vom Prozess zum Agenten',
+  '08-skills-bauen.md': 'Kap. 8: Skills bauen und erklären',
+  '09-betrieb-qualitaet.md': 'Kap. 9: Betrieb: Routinen, Qualität, Eskalation',
+  '10-messen-steuern.md': 'Kap. 10: Nutzen messen und steuern',
+  '11-rolle-geschaeftsfuehrung.md': 'Kap. 11: Für die Geschäftsführung',
+  '12-rolle-it-leitung.md': 'Kap. 12: Für die IT-Leitung',
+  '13-rolle-freiberufler.md': 'Kap. 13: Für Freiberufler und Solo-Setups',
+  'anhang-c-quellen.md': 'Anhang C: Quellenverzeichnis',
 }
 
 function stem(file: string): string {
@@ -26,12 +34,12 @@ function titleFor(file: string): string {
   const anhang = file.match(/^anhang-([a-z])-(.+)\.md$/i)
   if (anhang) {
     const label = anhang[2].replace(/-/g, ' ')
-    return `Anhang ${anhang[1].toUpperCase()} — ${label}`
+    return `Anhang ${anhang[1].toUpperCase()}: ${label}`
   }
 
   const numbered = file.match(/^(\d+)-(.+)\.md$/)
   if (numbered) {
-    return `Kap. ${Number(numbered[1])} — ${numbered[2].replace(/-/g, ' ')}`
+    return `Kap. ${Number(numbered[1])}: ${numbered[2].replace(/-/g, ' ')}`
   }
 
   return stem(file)
@@ -67,9 +75,13 @@ function sidebar(): DefaultTheme.SidebarItem[] {
     const n = chapterNumber(file)
     return n !== null && n >= 4 && n <= 6
   }).map(item)
-  const later = files.filter((file) => {
+  const teilIII = files.filter((file) => {
     const n = chapterNumber(file)
-    return n !== null && n >= 7
+    return n !== null && n >= 7 && n <= 10
+  }).map(item)
+  const teilIV = files.filter((file) => {
+    const n = chapterNumber(file)
+    return n !== null && n >= 11
   }).map(item)
   const anhang = files.filter((file) => file.startsWith('anhang-')).map(item)
 
@@ -84,13 +96,16 @@ function sidebar(): DefaultTheme.SidebarItem[] {
   ]
 
   if (teilI.length) {
-    groups.push({ text: 'Teil I — Orientierung', items: teilI })
+    groups.push({ text: 'Teil I: Orientierung (Kap 1-3)', items: teilI })
   }
   if (teilII.length) {
-    groups.push({ text: 'Teil II — Fundament', items: teilII })
+    groups.push({ text: 'Teil II: Fundament (Kap 4-6)', items: teilII })
   }
-  if (later.length) {
-    groups.push({ text: 'Weitere Kapitel', items: later })
+  if (teilIII.length) {
+    groups.push({ text: 'Teil III: Methode und Betrieb (Kap 7-10)', items: teilIII })
+  }
+  if (teilIV.length) {
+    groups.push({ text: 'Teil IV: Rollen (Kap 11+)', items: teilIV })
   }
   if (anhang.length) {
     groups.push({ text: 'Anhang', items: anhang })
