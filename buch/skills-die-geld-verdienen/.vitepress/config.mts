@@ -135,6 +135,7 @@ export default defineConfig({
     'exports/**',
     'skills/**',
     'assets/**/*.md',
+    'kapitel/00-outline.md',
   ],
   ignoreDeadLinks: 'localhostLinks',
   cleanUrls: true,
