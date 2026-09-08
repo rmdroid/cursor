@@ -20,9 +20,10 @@ Technik: Python/matplotlib. Keine erfundenen Zahlen/ROI, keine Drittlogos.
 
 | `10-steuerungs-cockpit.png` | Kap. 10 | Steuerungs-Cockpit (6 Felder, keine Demo-Zahlen) |
 
+| `14-90-tage-timeline.png` | Kap. 14 | 90-Tage-Timeline mit Meilensteinen und Stop-Gates |
+
 ## Hinweise
 
 - Zielbreite ca. 1600–2000 px (A5-tauglich).
 - Farben: Anthrazit-Text auf hellem Grund, Akzent Blau.
 - Regenerieren: `python3 scripts/generate_buch_grafiken.py`
-- In `kapitel/*.md`: `../assets/grafiken/<dateiname>.png` (nicht `./assets/…`).
