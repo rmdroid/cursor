@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market Intelligence Cockpit</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <h1>Market Intelligence Cockpit</h1>
+        <p>Lokal für Finance · keine Orders · inoffizielle Kursquelle</p>
+      </div>
+      <div class="top-actions">
+        <p class="conn" id="conn">
+          <span class="dot connecting" id="status-dot"></span>
+          <span id="status-label">Verbinde</span>
+        </p>
+        <button type="button" id="reconnect">Neu verbinden</button>
+        <button type="button" id="copy-json">JSON kopieren</button>
+        <button type="button" id="copy-csv">CSV kopieren</button>
+        <span id="copy-status" class="muted"></span>
+      </div>
+    </header>
+
+    <p id="banner" class="banner" hidden></p>
+
+    <main class="main">
+      <section class="panel watch" aria-label="Beobachtungsliste">
+        <div class="panel-head">
+          <h2>Beobachtungsliste</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Letzter</th>
+                <th>% Tag</th>
+                <th>Tag H/T</th>
+                <th>52W H/T</th>
+                <th>Zeit</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="watch-body"></tbody>
+          </table>
+        </div>
+        <form id="add-form" class="add-form" autocomplete="off">
+          <input id="add-symbol" type="text" placeholder="EXCHANGE:SYMBOL" spellcheck="false" aria-label="Symbol hinzufügen">
+          <button type="submit">Hinzufügen</button>
+        </form>
+        <ul id="search-results" class="search-results" hidden></ul>
+        <p id="add-error" class="warn" hidden></p>
+      </section>
+
+      <section class="panel chart-panel" aria-label="Chart">
+        <div class="panel-head chart-head">
+          <div>
+            <h2 id="chart-title">Chart</h2>
+            <p id="chart-sub" class="muted">SMA 20/50/200, RSI 14 und MACD aus den OHLC-Kerzen</p>
+          </div>
+          <div class="toggles">
+            <button type="button" class="seg on" data-timeframe="D">Tag</button>
+            <button type="button" class="seg" data-timeframe="W">Woche</button>
+            <label><input type="checkbox" data-overlay="sma20" checked> SMA20</label>
+            <label><input type="checkbox" data-overlay="sma50" checked> SMA50</label>
+            <label><input type="checkbox" data-overlay="sma200" checked> SMA200</label>
+            <label><input type="checkbox" data-overlay="rsi" checked> RSI14</label>
+            <label><input type="checkbox" data-overlay="macd" checked> MACD</label>
+            <button type="button" id="reload-chart">Neu laden</button>
+          </div>
+        </div>
+        <div class="levels" id="levels">
+          <span class="levels-label">Marken</span>
+          <div id="level-chips" class="chips"></div>
+          <form id="level-form" autocomplete="off">
+            <input id="level-input" type="number" step="any" placeholder="4150" aria-label="Marke setzen">
+            <button type="submit">Setzen</button>
+          </form>
+        </div>
+        <ul id="alerts" class="alerts"></ul>
+        <div class="chart-wrap">
+          <div id="chart"></div>
+          <p id="chart-message" class="chart-message">Kerzen werden geladen…</p>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="panel" aria-label="Volatilität">
+          <div class="panel-head"><h2>Volatilität</h2></div>
+          <p class="muted vol-note">HV20 aus Tagesschlüssen, annualisiert. IV nur bei Quote. Sprung ab +30 % gegen das 5-Tage-Mittel. Keine Orders.</p>
+          <div id="volatility" class="vol-body">Wird geladen…</div>
+        </section>
+        <section class="panel strategy" aria-label="Strategie">
+          <div class="panel-head"><h2>Strategie</h2></div>
+          <dl id="indicator-values" class="metrics"></dl>
+          <label class="notes-label" for="notes">Notizen zu diesem Symbol</label>
+          <textarea id="notes" rows="5" placeholder="Hypothese, Invalidierung, was Nadine prüfen will…"></textarea>
+        </section>
+        <section class="panel" aria-label="Refinanzierung">
+          <div class="panel-head"><h2>Refinanzierung</h2></div>
+          <div id="funding" class="funding"></div>
+        </section>
+        <section class="panel" aria-label="Futures">
+          <div class="panel-head"><h2>Futures</h2></div>
+          <div id="futures" class="prose"></div>
+        </section>
+        <section class="panel" aria-label="Technische Einschätzung">
+          <div class="panel-head"><h2>TV-Einschätzung</h2></div>
+          <div id="ta" class="prose">—</div>
+        </section>
+      </aside>
+    </main>
+
+    <section class="snapshot" aria-label="Sitzungsüberblick">
+      <h2>Sitzungsüberblick</h2>
+      <pre id="snapshot">Lade Kurse…</pre>
+    </section>
+  </div>
+  <script src="/lib/shared.js"></script>
+  <script src="/vendor/lightweight-charts/lightweight-charts.standalone.production.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
