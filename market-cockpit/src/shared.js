@@ -508,11 +508,9 @@
       quoteChunk(symbol, quotes[symbol], futuresFor(symbol, now))
     ));
     const volText = volatilitySummary(volatility);
-    const lines = [
-      `${mode} · ${clockLabel(now)}`,
-      ...packLines(parts, volText ? 2 : 3),
-    ];
+    const lines = [`${mode} · ${clockLabel(now)}`];
     if (volText) lines.push(`Vola ${volText}`);
+    lines.push(...packLines(parts, volText ? 2 : 3));
     lines.push(fundingSummary(buildFunding(quotes)));
     return { mode, lines: lines.slice(0, volText ? 6 : 5) };
   }
