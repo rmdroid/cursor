@@ -263,7 +263,7 @@ tr.selected { background: rgba(224, 177, 90, 0.1); box-shadow: inset 2px 0 0 var
   list-style: none;
   margin: 0 0 4px;
   padding: 0;
-  max-height: 52px;
+  max-height: 72px;
   overflow: auto;
   font-size: 12px;
 }
@@ -314,6 +314,16 @@ tr.selected { background: rgba(224, 177, 90, 0.1); box-shadow: inset 2px 0 0 var
 .advice.sell { color: var(--down); }
 .advice.neutral { color: var(--muted); }
 
+.vol-note { margin: 0 0 6px; font-size: 11px; line-height: 1.35; }
+.vol-body { font-size: 12px; }
+.vol-table { width: 100%; }
+.vol-table th, .vol-table td { white-space: normal; vertical-align: top; }
+.vol-table td:first-child, .vol-table th:first-child { text-align: left; }
+.vol-table small { display: block; color: var(--muted); font-weight: 400; }
+.vol-table tr.vol-selected { background: rgba(224, 177, 90, 0.1); }
+.vol-table .jump { color: var(--warn); font-weight: 650; }
+.vol-table .iv-missing { color: var(--muted); }
+
 .metrics {
   display: grid;
   grid-template-columns: auto 1fr auto 1fr;
@@ -335,7 +345,7 @@ textarea {
 
 .snapshot {
   padding: 6px 10px 8px;
-  max-height: 7.4rem;
+  max-height: 9.2rem;
   overflow: auto;
 }
 .snapshot pre {

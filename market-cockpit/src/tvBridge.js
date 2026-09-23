@@ -1,6 +1,6 @@
 const TradingView = require('@mathieuc/tradingview');
 const { withIndicators } = require('./indicators');
-const { adviceLabel } = require('./shared');
+const { adviceLabel, VOLATILITY_FEEDS } = require('./shared');
 
 const QUOTE_FIELDS = [
   'lp',
@@ -79,7 +79,8 @@ class TvBridge {
   }
 
   desired() {
-    return new Set([...this.userSymbols, ...FUNDING_SYMBOLS]);
+    const ivSymbols = VOLATILITY_FEEDS.map((feed) => feed.ivSymbol).filter(Boolean);
+    return new Set([...this.userSymbols, ...FUNDING_SYMBOLS, ...ivSymbols]);
   }
 
   onState(listener) {

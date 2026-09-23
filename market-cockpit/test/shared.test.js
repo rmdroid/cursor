@@ -8,6 +8,11 @@ const {
   buildSnapshot,
   adviceLabel,
   decimalsFor,
+  historicalVolatility,
+  volaJump,
+  buildVolatilityRow,
+  VOLATILITY_FEEDS,
+  formatVol,
 } = require('../src/shared');
 
 test('forex daily bar opening at 21:00 UTC uses the next session date', () => {
@@ -96,4 +101,120 @@ test('getTA-scaled advice maps to German labels', () => {
 test('pricescale drives decimal places', () => {
   assert.equal(decimalsFor({ pricescale: 100000, last: 1.14 }), 5);
   assert.equal(decimalsFor({ pricescale: 100, last: 4300 }), 2);
+});
+
+test('HV20 is the annualized sample stdev of log returns', () => {
+  const flat = Array.from({ length: 30 }, () => 100);
+  const flatHv = historicalVolatility(flat);
+  assert.equal(flatHv[19], null);
+  assert.equal(flatHv[20], 0);
+
+  const r = Math.log(1.01);
+  const returns = Array.from({ length: 20 }, (_, i) => (i % 2 === 0 ? r : -r));
+  const closes = [100];
+  returns.forEach((ret) => closes.push(closes[closes.length - 1] * Math.exp(ret)));
+  const mean = returns.reduce((sum, value) => sum + value, 0) / returns.length;
+  const variance = returns.reduce((sum, value) => sum + (value - mean) ** 2, 0) / (returns.length - 1);
+  const expected = Math.sqrt(variance) * Math.sqrt(252) * 100;
+  const hv = historicalVolatility(closes);
+  assert.ok(Math.abs(hv[20] - expected) < 1e-9);
+  assert.equal(hv[19], null);
+});
+
+test('a zero close does not invent a volatility number', () => {
+  const closes = Array.from({ length: 25 }, (_, i) => (i === 10 ? 0 : 100 + i));
+  const hv = historicalVolatility(closes);
+  assert.equal(hv[10], null);
+  assert.equal(hv[24], null);
+});
+
+test('vola jump fires at +30% versus the previous five readings and ignores declines', () => {
+  const up = volaJump([10, 10, 10, 10, 10, 14]);
+  assert.equal(up.jumped, true);
+  assert.equal(up.baseline, 10);
+  assert.equal(volaJump([10, 10, 10, 10, 10, 12]).jumped, false);
+  assert.equal(volaJump([10, 10, 10, 10, 10, 8]).jumped, false);
+  assert.equal(volaJump([10, 10, 10, 12]).ready, false);
+});
+
+test('IV stays empty when the feed has no verified symbol', () => {
+  const euro = VOLATILITY_FEEDS.find((feed) => feed.symbol === 'FX:EURUSD');
+  const es = VOLATILITY_FEEDS.find((feed) => feed.symbol === 'CME_MINI:ES1!');
+  const gold = VOLATILITY_FEEDS.find((feed) => feed.symbol === 'OANDA:XAUUSD');
+  const spx = VOLATILITY_FEEDS.find((feed) => feed.symbol === 'SP:SPX');
+  const btc = VOLATILITY_FEEDS.find((feed) => feed.symbol === 'BITSTAMP:BTCUSD');
+  assert.equal(gold.ivSymbol, 'CBOE:GVZ');
+  assert.equal(spx.ivSymbol, 'TVC:VIX');
+  assert.equal(btc.ivSymbol, 'VOLMEX:BVIV');
+  assert.equal(es.ivSymbol, null);
+  assert.equal(euro.ivSymbol, null);
+
+  const closes = Array.from({ length: 40 }, (_, i) => 100 + i);
+  const row = buildVolatilityRow(euro, { closes, ivLast: 99, ivCloses: [1, 2, 3, 4, 5, 6] });
+  assert.equal(row.iv, null);
+  assert.equal(row.ivAvailable, false);
+  assert.match(row.ivReason, /unavailable via TV API/);
+  assert.equal(row.hv20 > 0, true);
+  assert.equal(formatVol(row.hv20).endsWith('%'), true);
+});
+
+test('a live IV quote is kept and a missing quote is not replaced with a guess', () => {
+  const spx = VOLATILITY_FEEDS.find((feed) => feed.symbol === 'SP:SPX');
+  const closes = Array.from({ length: 40 }, () => 100);
+  const live = buildVolatilityRow(spx, {
+    closes,
+    ivLast: 14.29,
+    ivCloses: [16, 16, 16, 16, 16, 14.2],
+  });
+  assert.equal(live.ivAvailable, true);
+  assert.equal(live.iv, 14.29);
+  assert.equal(live.ivName, 'VIX');
+  assert.equal(live.ivJump, false);
+
+  const pending = buildVolatilityRow(spx, { closes, ivCloses: null, ivLast: null });
+  assert.equal(pending.ivPending, true);
+  assert.equal(pending.iv, null);
+  assert.equal(pending.ivReason, null);
+
+  const failed = buildVolatilityRow(spx, { closes, ivCloses: [], ivLast: null, ivError: 'no_such_symbol' });
+  assert.equal(failed.ivAvailable, false);
+  assert.equal(failed.iv, null);
+  assert.match(failed.ivReason, /unavailable via TV API/);
+  assert.doesNotMatch(failed.ivReason, /14/);
+});
+
+test('snapshot adds one vola line and still leaves funding stubs untouched', () => {
+  const quotes = {
+    'OANDA:XAUUSD': {
+      name: 'XAUUSD', last: 4300.25, changePct: -1.34, dayHigh: 4369.56, dayLow: 4299.6,
+      high52: 5602.23, low52: 3722.22, pricescale: 100,
+    },
+    'SP:SPX': {
+      name: 'SPX', last: 7764.64, changePct: 0, dayHigh: 7780, dayLow: 7700,
+      high52: 7800, low52: 5000, pricescale: 100,
+    },
+  };
+  const gold = buildVolatilityRow(
+    VOLATILITY_FEEDS.find((feed) => feed.symbol === 'OANDA:XAUUSD'),
+    { closes: Array.from({ length: 40 }, () => 100), ivLast: 23.59, ivCloses: [20, 20, 20, 20, 20, 23] },
+  );
+  const euro = buildVolatilityRow(
+    VOLATILITY_FEEDS.find((feed) => feed.symbol === 'FX:EURUSD'),
+    { closes: Array.from({ length: 40 }, (_, i) => 1.1 + i * 0.001) },
+  );
+  const snapshot = buildSnapshot({
+    watchlist: ['OANDA:XAUUSD', 'SP:SPX'],
+    quotes,
+    volatility: [gold, euro],
+    now: new Date('2026-09-23T20:30:00Z'),
+  });
+  assert.equal(snapshot.mode, 'Close');
+  assert.ok(snapshot.lines.length <= 6);
+  const text = snapshot.lines.join('\n');
+  assert.match(text, /Vola Gold HV20/);
+  assert.match(text, /IV 23,59% GVZ/);
+  assert.match(text, /Euro HV20/);
+  assert.match(text, /Euro HV20 [^\n]*IV unavailable via TV API/);
+  assert.match(text, /€STR\/SOFR\/SARON unavailable via TV API/);
+  assert.equal((text.match(/23,59/g) || []).length, 1);
 });
