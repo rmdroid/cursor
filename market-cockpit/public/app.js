@@ -32,6 +32,11 @@
     lastPrice: {},
     ta: null,
     taSymbol: '',
+    dailyCandles: {},
+    dailyErrors: {},
+    ivCandles: {},
+    volaArmed: {},
+    volRows: [],
   };
 
   const els = {
@@ -47,6 +52,7 @@
     snapshot: document.getElementById('snapshot'),
     chips: document.getElementById('level-chips'),
     alerts: document.getElementById('alerts'),
+    volatility: document.getElementById('volatility'),
     chart: document.getElementById('chart'),
     chartMessage: document.getElementById('chart-message'),
     chartTitle: document.getElementById('chart-title'),
@@ -165,6 +171,37 @@
       });
     });
     if (!fresh.length) return;
+    fresh.forEach((alert) => { alert.kind = 'level'; });
+    state.alerts = fresh.concat(state.alerts).slice(0, 8);
+  }
+
+  function checkVola(rows) {
+    const fresh = [];
+    (rows || []).forEach((row) => {
+      [
+        ['hv', row.hvJump, 'HV20', row.hv20, row.hvBaseline, row.hvChangeRatio],
+        ['iv', row.ivJump, row.ivName ? `IV ${row.ivName}` : 'IV', row.iv, row.ivBaseline, row.ivChangeRatio],
+      ].forEach(([kind, jumped, metric, value, baseline, ratio]) => {
+        const key = `${row.symbol}:${kind}`;
+        if (!jumped) {
+          delete state.volaArmed[key];
+          return;
+        }
+        if (state.volaArmed[key]) return;
+        state.volaArmed[key] = true;
+        fresh.push({
+          kind: 'vola',
+          symbol: row.symbol,
+          name: row.label,
+          metric,
+          value,
+          baseline,
+          ratio,
+          at: Date.now(),
+        });
+      });
+    });
+    if (!fresh.length) return;
     state.alerts = fresh.concat(state.alerts).slice(0, 8);
   }
 
@@ -235,15 +272,88 @@
       return `<span class="chip ${side} ${hit.has(level) ? 'hit' : ''}">${esc(lib.formatNumber(level, digits))} ${tag}<button type="button" class="icon-btn" data-level="${level}" aria-label="Marke entfernen">×</button></span>`;
     }).join('');
     els.alerts.innerHTML = state.alerts.map((alert) => {
+      if (alert.kind === 'vola') {
+        const move = lib.formatPct((alert.ratio || 0) * 100);
+        return `<li>${esc(lib.formatClock(alert.at))} Vola-Sprung ${esc(alert.name)} ${esc(alert.metric)} ${esc(lib.formatVol(alert.value))} · ${esc(move)} ggü. 5-Tage-Mittel ${esc(lib.formatVol(alert.baseline))}</li>`;
+      }
       const digits = lib.decimalsFor(quoteOf(alert.symbol));
       return `<li>${esc(lib.formatClock(alert.at))} ${esc(alert.name)} Bruch ${esc(lib.formatNumber(alert.level, digits))} ${esc(alert.direction)} · ${esc(lib.formatNumber(alert.price, digits))}</li>`;
     }).join('');
+  }
+
+  function volatilityFeeds() {
+    const feeds = lib.VOLATILITY_FEEDS.slice();
+    if (state.selected && !feeds.some((feed) => feed.symbol === state.selected)) {
+      const quote = quoteOf(state.selected);
+      feeds.unshift({
+        symbol: state.selected,
+        label: quote.name || state.selected,
+        ivSymbol: null,
+        ivName: null,
+        ivReason: 'Kein IV-Index für dieses Symbol.',
+      });
+    }
+    return feeds;
+  }
+
+  function volatilityRows() {
+    return volatilityFeeds().map((feed) => {
+      const known = Object.prototype.hasOwnProperty.call(state.dailyCandles, feed.symbol);
+      const candles = known ? state.dailyCandles[feed.symbol] : null;
+      const closes = candles ? candles.map((candle) => candle.close) : null;
+      let ivCloses = null;
+      if (feed.ivSymbol && Object.prototype.hasOwnProperty.call(state.ivCandles, feed.ivSymbol)) {
+        ivCloses = (state.ivCandles[feed.ivSymbol] || []).map((candle) => candle.close);
+      }
+      const ivQuote = feed.ivSymbol ? state.quotes[feed.ivSymbol] : null;
+      return lib.buildVolatilityRow(feed, {
+        closes,
+        ivCloses,
+        ivLast: ivQuote && Number.isFinite(ivQuote.last) ? ivQuote.last : null,
+        ivError: ivQuote && ivQuote.error ? ivQuote.error : null,
+        dailyError: state.dailyErrors[feed.symbol] || null,
+      });
+    });
+  }
+
+  function renderVolatility() {
+    const rows = state.volRows || [];
+    if (!rows.length) {
+      els.volatility.textContent = 'Wird geladen…';
+      return;
+    }
+    const body = rows.map((row) => {
+      const hv = row.hvPending
+        ? '…'
+        : lib.formatVol(row.hv20);
+      const hvDetail = row.hvBaseline != null
+        ? `<small>5T ${esc(lib.formatVol(row.hvBaseline))}</small>`
+        : (row.dailyError ? `<small>${esc(row.dailyError)}</small>` : '');
+      let ivCell;
+      if (row.ivPending) ivCell = '…';
+      else if (row.ivAvailable) {
+        const base = row.ivBaseline != null ? `<small>5T ${esc(lib.formatVol(row.ivBaseline))}</small>` : '';
+        ivCell = `<span class="${row.ivJump ? 'jump' : ''}">${esc(lib.formatVol(row.iv))}${row.ivJump ? ' ↑' : ''}</span> <small>${esc(row.ivName || row.ivSymbol || '')}</small>${base}`;
+      } else {
+        const detail = String(row.ivReason || '').replace(/^unavailable via TV API — /, '');
+        ivCell = `<span class="iv-missing"><strong>unavailable via TV API</strong><small>${esc(detail)}</small></span>`;
+      }
+      return `<tr class="${row.symbol === state.selected ? 'vol-selected' : ''}">
+        <td>${esc(row.label)}<small>${esc(row.symbol)}</small></td>
+        <td class="${row.hvJump ? 'jump' : ''}">${esc(hv)}${row.hvJump ? ' ↑' : ''}${hvDetail}</td>
+        <td>${ivCell}</td>
+      </tr>`;
+    }).join('');
+    els.volatility.innerHTML = `<table class="vol-table"><thead><tr><th>Markt</th><th>HV20</th><th>IV</th></tr></thead><tbody>${body}</tbody></table>`;
   }
 
   function renderSnapshot() {
     const snapshot = lib.buildSnapshot({
       watchlist: watchlist(),
       quotes: state.quotes,
+      volatility: (state.volRows || []).filter((row) => (
+        lib.VOLATILITY_FEEDS.some((feed) => feed.symbol === row.symbol)
+      )),
     });
     els.snapshot.textContent = snapshot.lines.join('\n');
   }
@@ -405,6 +515,8 @@
     els.chartTitle.textContent = quote.description
       ? `${quote.name} · ${quote.description}`
       : (quote.name || 'Chart');
+    state.volRows = volatilityRows();
+    checkVola(state.volRows);
     renderStatus();
     renderWatchlist();
     renderFunding();
@@ -412,6 +524,7 @@
     renderLevels();
     renderSnapshot();
     renderMetrics();
+    renderVolatility();
     renderTa();
     maybeRedrawChart();
   }
@@ -446,6 +559,10 @@
       if (!response.ok) throw new Error(body.error || 'Chart fehlgeschlagen');
       if (body.symbol !== state.selected || body.timeframe !== state.timeframe) return;
       state.chartPayload = body;
+      if (body.timeframe === 'D' && Array.isArray(body.candles)) {
+        state.dailyCandles[body.symbol] = body.candles;
+        delete state.dailyErrors[body.symbol];
+      }
       els.chartMessage.hidden = true;
       renderMetrics();
       renderChart(forceFit !== false);
@@ -481,6 +598,23 @@
     render();
     loadChart(true);
     loadTa();
+    if (symbol && !Object.prototype.hasOwnProperty.call(state.dailyCandles, symbol)) {
+      fetchDaily(symbol).then((candles) => {
+        state.dailyCandles[symbol] = candles;
+        delete state.dailyErrors[symbol];
+        render();
+      }).catch((err) => {
+        state.dailyCandles[symbol] = [];
+        state.dailyErrors[symbol] = err.message || 'Tageskerzen fehlen';
+        render();
+      });
+    }
+  }
+
+  function coreVolatility() {
+    return (state.volRows || []).filter((row) => (
+      lib.VOLATILITY_FEEDS.some((feed) => feed.symbol === row.symbol)
+    ));
   }
 
   function exportModel() {
@@ -489,12 +623,19 @@
     symbols.forEach((symbol) => {
       levels[symbol] = levelsFor(symbol);
     });
+    const volatility = state.volRows || [];
     return {
       exportedAt: new Date().toISOString(),
       source: 'unofficial @mathieuc/tradingview',
       disclaimer: 'Not official TradingView. No order routing.',
-      snapshot: lib.buildSnapshot({ watchlist: symbols, quotes: state.quotes }).lines,
+      volatilityMethod: 'HV20 close-to-close, sample stdev of log returns, sqrt(252), percent. IV is a verified index quote only. Jump when the latest value is at least 30% above the mean of the previous 5 readings.',
+      snapshot: lib.buildSnapshot({
+        watchlist: symbols,
+        quotes: state.quotes,
+        volatility: coreVolatility(),
+      }).lines,
       quotes: symbols.map((symbol) => quoteOf(symbol)),
+      volatility,
       levels,
       funding: lib.buildFunding(state.quotes),
       futures: lib.esFrontMonth(new Date()),
@@ -507,14 +648,41 @@
     return text;
   }
 
+  function volBySymbol(model) {
+    const map = {};
+    (model.volatility || []).forEach((row) => { map[row.symbol] = row; });
+    return map;
+  }
+
+  function volCells(row) {
+    if (!row) return ['', '', '', ''];
+    return [
+      row.hvPending ? '' : row.hv20,
+      row.ivAvailable ? row.iv : '',
+      row.ivSymbol || '',
+      row.ivAvailable ? 'live' : (row.ivPending ? 'pending' : 'unavailable'),
+    ];
+  }
+
   function toCsv(model) {
-    const header = ['section', 'symbol', 'name', 'last', 'change_pct', 'day_high', 'day_low', 'high_52w', 'low_52w', 'currency', 'updated_at', 'levels', 'detail'];
+    const header = ['section', 'symbol', 'name', 'last', 'change_pct', 'day_high', 'day_low', 'high_52w', 'low_52w', 'currency', 'updated_at', 'levels', 'detail', 'hv20', 'iv', 'iv_symbol', 'iv_status'];
     const rows = [header];
+    const vol = volBySymbol(model);
     model.quotes.forEach((quote) => {
+      const row = vol[quote.symbol];
       rows.push([
         'quote', quote.symbol, quote.name, quote.last, quote.changePct, quote.dayHigh, quote.dayLow,
         quote.high52, quote.low52, quote.currency, quote.updatedAt,
         (model.levels[quote.symbol] || []).join('|'), quote.error || quote.description || '',
+        ...volCells(row),
+      ]);
+    });
+    (model.volatility || []).forEach((row) => {
+      rows.push([
+        'volatility', row.symbol, row.label, row.hv20, row.hvChangeRatio, '', '', '', '', '', '',
+        row.ivJump || row.hvJump ? 'jump' : '',
+        row.ivAvailable ? `${row.ivName || ''} ${row.iv}` : (row.ivReason || ''),
+        ...volCells(row),
       ]);
     });
     model.funding.forEach((slot) => {
@@ -523,10 +691,11 @@
         slot.available ? (slot.unit === 'bp' ? slot.value : slot.quote.last) : '',
         slot.quote ? slot.quote.changePct : '', '', '', '', '', '', '',
         '', slot.available ? (slot.note || slot.unit || '') : slot.reason,
+        '', '', '', '',
       ]);
     });
     model.snapshot.forEach((line) => {
-      rows.push(['snapshot', '', '', '', '', '', '', '', '', '', '', '', line]);
+      rows.push(['snapshot', '', '', '', '', '', '', '', '', '', '', '', line, '', '', '', '']);
     });
     return rows.map((row) => row.map(csvField).join(',')).join('\n');
   }
@@ -707,12 +876,45 @@
         renderStatus();
       }
     };
-    loadChart(true);
+    loadChart(true).finally(() => refreshVolatility());
     loadTa();
     setInterval(() => {
       if (document.visibilityState === 'hidden') return;
       loadChart(false);
+      refreshVolatility();
     }, 60000);
+  }
+
+  async function fetchDaily(symbol) {
+    const response = await fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&timeframe=D`);
+    const body = await response.json();
+    if (!response.ok) throw new Error(body.error || 'Chart fehlgeschlagen');
+    return body.candles || [];
+  }
+
+  async function refreshVolatility() {
+    const symbols = new Set(lib.VOLATILITY_FEEDS.map((feed) => feed.symbol));
+    if (state.selected) symbols.add(state.selected);
+    const ivSymbols = lib.VOLATILITY_FEEDS.map((feed) => feed.ivSymbol).filter(Boolean);
+    const jobs = [];
+    symbols.forEach((symbol) => {
+      jobs.push(fetchDaily(symbol).then((candles) => {
+        state.dailyCandles[symbol] = candles;
+        delete state.dailyErrors[symbol];
+      }).catch((err) => {
+        if (!state.dailyCandles[symbol]) state.dailyCandles[symbol] = [];
+        state.dailyErrors[symbol] = err.message || 'Tageskerzen fehlen';
+      }));
+    });
+    ivSymbols.forEach((symbol) => {
+      jobs.push(fetchDaily(symbol).then((candles) => {
+        state.ivCandles[symbol] = candles;
+      }).catch(() => {
+        if (!state.ivCandles[symbol]) state.ivCandles[symbol] = [];
+      }));
+    });
+    await Promise.all(jobs);
+    render();
   }
 
   boot();
